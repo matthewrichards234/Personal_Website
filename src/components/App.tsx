@@ -3,7 +3,7 @@ import Landing from "./Landing";
 const App = () => {
   return (
     <div>
-      <p>Hello</p>
+      {/* <p>Hello</p> */}
       <Landing />
     </div>
   );
