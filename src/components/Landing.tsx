@@ -23,8 +23,9 @@ const Landing = () => {
               transform="translate(100 100)"
             />
           </svg> */}
+
           <div className="flex flex-col items-center align-center">
-            <div className="hover:animate-blob1Move">
+            <div className="">
               <svg
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +40,22 @@ const Landing = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-col items-center align-center pb-12">
+        <button
+          className="cursor-pointer 
+          text-4xl 
+          border 
+          p-0 m-0 
+          transition-transform 
+          duration-600 
+          ease-in-out 
+          hover:scale-300 
+          hover:-rotate-12"
+        >
+          MR
+        </button>
       </div>
     </div>
   );
