@@ -4,7 +4,7 @@
   --color-indigo: oklch(25.7% 0.09 281.288);
 
   --animate-blob1: blob1 1s ease-in-out infinite;
-  --animate-blob1Move: blob1Move 5s ease-in-out infinite;
+  --animate-blob1Move: blob1Move 3s ease-out forwards;
 }
 
 @keyframes blob1 {
@@ -25,14 +25,14 @@
   }
 
   25% {
-    transform: translate(80px, -60px);
+    transform: translate(-80px, -60px);
   }
 
   50% {
-    transform: translate(0, -100px);
+    transform: translate(-150, -100px);
   }
 
   75% {
-    transform: translate(-60px, -40px);
+    transform: translate(-200px, -150px);
   }
 }
