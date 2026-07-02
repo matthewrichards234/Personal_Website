@@ -71,3 +71,6 @@ export default defineConfig([
   },
 ]);
 ```
+
+Tools & Resources:
+https://css-tricks.com/blobs/
