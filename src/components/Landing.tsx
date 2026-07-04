@@ -10,11 +10,11 @@ const Landing = () => {
                     h-screen 
                     m-0 
                     p-0 
-                    position:relative 
+                    relative 
                     border-4"
       >
         <div
-          className="position:absolute
+          className="absolute
                       top-0
                       left-0
                       w-screen
