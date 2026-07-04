@@ -4,6 +4,7 @@
   --color-indigo: oklch(25.7% 0.09 281.288);
   --animate-wiggle: wiggle 5s ease-in-out infinite;
   --animate-float: float 12s ease-in-out infinite;
+  --animate-orbit: orbit 10s linear infinite;
 }
 
 @keyframes wiggle {
@@ -16,7 +17,6 @@
     transform: rotate(3deg);
   }
 }
-
 @keyframes float {
   0% {
     transform: translate(0px, 0px);
@@ -52,5 +52,13 @@
 
   100% {
     transform: translate(0px, 0px);
+  }
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
   }
 }

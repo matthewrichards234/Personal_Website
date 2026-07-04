@@ -64,6 +64,10 @@ const Landing = () => {
               MR
             </button>
           </div>
+          {/* Testing orbit */}
+          <div className="">
+            <p className="text-8xl absolute animate-orbit">*</p>
+          </div>
         </div>
       </div>
     </div>
