@@ -66,7 +66,14 @@ const Landing = () => {
           </div>
           {/* Testing orbit */}
           <div className="">
-            <p className="text-8xl absolute animate-orbit">*</p>
+            <p className="text-8xl relative left-200 animate-orbit">1</p>
+            <p className="text-8xl relative left-200 animate-orbit">2</p>
+            <p className="text-8xl relative left-200 animate-orbit">3</p>
+            {/* This shows the issue that we need the animations to be seperate */}
+          </div>
+          {/* Testing rotating */}
+          <div>
+            <p className="text-8xl animate-rotating">P</p>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@
   --animate-wiggle: wiggle 5s ease-in-out infinite;
   --animate-float: float 12s ease-in-out infinite;
   --animate-orbit: orbit 10s linear infinite;
+  --animate-rotating: rotating 10s linear infinite;
 }
 
 @keyframes wiggle {
@@ -60,5 +61,13 @@
   }
   to {
     transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
