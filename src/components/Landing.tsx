@@ -72,9 +72,9 @@ const Landing = () => {
             {/* This shows the issue that we need the animations to be seperate */}
           </div>
           {/* Testing rotating */}
-          <div>
+          {/* <div>
             <p className="text-8xl animate-rotating">P</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
