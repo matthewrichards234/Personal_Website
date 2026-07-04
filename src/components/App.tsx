@@ -1,14 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import Footer from "./Footer";
-import { Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const App = () => {
   return (
     <div>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/" element={<Landing />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </div>

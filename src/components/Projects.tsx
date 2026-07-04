@@ -1,13 +1,13 @@
-const About = () => {
+const Projects = () => {
   return (
     <div
       className="bg-indigo 
                     text-white
                     min-h-screen"
     >
-      About
+      Projects
     </div>
   );
 };
 
-export default About;
+export default Projects;

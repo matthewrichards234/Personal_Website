@@ -1,13 +1,13 @@
-const About = () => {
+const Contact = () => {
   return (
     <div
       className="bg-indigo 
                     text-white
                     min-h-screen"
     >
-      About
+      Contact
     </div>
   );
 };
 
-export default About;
+export default Contact;
