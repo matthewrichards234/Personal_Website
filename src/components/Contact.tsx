@@ -6,7 +6,17 @@ const Contact = () => {
                     min-h-screen"
     >
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-shadow-2xs text-9xl">Contact Me</h1>
+        <h1
+          className="
+          text-9xl 
+          bg-clip-text 
+          text-transparent
+          bg-[linear-gradient(to_right,rgb(250,78,10)_10%,rgb(247,12,204)_25%,rgb(0,106,255)_50%,rgb(48,248,255)_75%,rgb(250,78,10)_100%)]
+          bg-size-[200%_auto]
+          animate-gradientText"
+        >
+          Contact Me
+        </h1>
         <h3 className="text-3xl">
           For any business inquires, please contact me with the information
           provided below

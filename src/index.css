@@ -6,6 +6,7 @@
   --animate-float: float 12s ease-in-out infinite;
   --animate-orbit: orbit 10s linear infinite;
   --animate-rotating: rotating 10s linear infinite;
+  --animate-gradientText: gradientText 3s linear infinite;
 }
 
 @keyframes wiggle {
@@ -69,5 +70,13 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes gradientText {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
