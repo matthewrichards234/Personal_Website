@@ -7,7 +7,8 @@ const Projects = () => {
     >
       <h1
         className="text-8xl 
-                      text-center 
+                      text-center
+                      border 
                       h-screen 
                       w-screen"
       >
@@ -18,6 +19,8 @@ const Projects = () => {
         flex-col 
         flex-wrap 
         gap-4 
+        border
+        mt-3
         items-center 
         animate-scrollAppear 
         [animation-timeline:view()] 
@@ -31,15 +34,42 @@ const Projects = () => {
           className="w-110 h-80"
         />
         <div className="w-64 h-24 bg-gray-300 rounded-lg"></div>
+      </div>
+
+      <div
+        className="flex 
+        flex-col 
+        flex-wrap 
+        gap-4 
+        border
+        mt-3
+        items-center 
+        animate-scrollAppear 
+        [animation-timeline:view()] 
+        [animation-range:entry_0%_cover_20%]"
+      >
         <div className="w-28 h-56 bg-gray-300 rounded-lg"></div>
         <img
           src="src/assets/georgi-kalaydzhiev-OyfQeTOBtxE-unsplash.jpg"
           alt=""
           className="w-200 h-180"
         />
+      </div>
+
+      <div
+        className="flex 
+        flex-col 
+        flex-wrap 
+        gap-4 
+        border
+        mt-3
+        items-center 
+        animate-scrollAppear 
+        [animation-timeline:view()] 
+        [animation-range:entry_0%_cover_20%]"
+      >
         <div className="w-96 h-16 bg-gray-300 rounded-lg"></div>
         <div className="w-80 h-12 bg-gray-300 rounded-lg"></div>
-
         <img
           src="src/assets/tim-mossholder-mTs6ONxfm7c-unsplash.jpg"
           alt=""
