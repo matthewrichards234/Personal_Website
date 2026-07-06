@@ -5,7 +5,13 @@ const Contact = () => {
                     text-white
                     min-h-screen"
     >
-      <div className="flex flex-col items-center justify-center">
+      <div
+        className="flex 
+                      flex-col 
+                      items-center 
+                      justify-center
+                      pt-12"
+      >
         <h1
           className="
           text-9xl 

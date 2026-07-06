@@ -7,6 +7,7 @@
   --animate-orbit: orbit 10s linear infinite;
   --animate-rotating: rotating 10s linear infinite;
   --animate-gradientText: gradientText 3s linear infinite;
+  --animate-scrollAppear: scrollAppear 5s linear;
 }
 
 @keyframes wiggle {
@@ -78,5 +79,18 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes scrollAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Animations scroll in from right */
+    /* transform: translateX(-100px); */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    /* transform: translateX(0); */
   }
 }
