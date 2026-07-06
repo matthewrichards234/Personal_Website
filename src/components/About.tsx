@@ -21,7 +21,7 @@ const About = () => {
   return (
     // Body
     <div
-      className="bg-blue-200
+      className="bg-blue-400
                     text-white
                     min-h-screen"
     >
