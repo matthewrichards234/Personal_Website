@@ -22,9 +22,9 @@ const Projects = () => {
         border
         mt-3
         items-center 
-        animate-scrollAppear 
+        animate-scrollAppear
         [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_20%]"
+        [animation-range:entry_0%_cover_30%]"
       >
         <div className="w-80 h-12 bg-gray-300 rounded-lg"></div>
         <div className="w-40 h-40 bg-gray-300 rounded-lg"></div>
