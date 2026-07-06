@@ -22,6 +22,9 @@ const Resume = () => {
           />
         </button>
       </div>
+      <div>
+        <iframe src="src/assets/resume_for_website.pdf" alt="matthews_resume" />
+      </div>
     </div>
   );
 };
