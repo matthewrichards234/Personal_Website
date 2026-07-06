@@ -9,6 +9,8 @@
   --animate-gradientText: gradientText 3s linear infinite;
   --animate-scrollAppear: scrollAppear 5s linear;
   --animate-fade-in: fade-in linear forwards;
+  --animate-horizontalInfiniteScroll: horizontalInfiniteScroll 45s linear
+    infinite;
 }
 
 @keyframes wiggle {
@@ -94,6 +96,14 @@
       opacity: 1;
       transform: scale(1);
       /* transform: translateX(0); */
+    }
+  }
+  @keyframes horizontalInfiniteScroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
     }
   }
 }

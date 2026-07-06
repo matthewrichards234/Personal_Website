@@ -19,20 +19,34 @@ const About = () => {
     "Jupyter Notebook",
   ];
   return (
+    // Body
     <div
       className="bg-blue-200
                     text-white
                     min-h-screen"
     >
-      <div className="w-250 p-8">
+      {/* Carousel */}
+      <div
+        className="w-250 
+        p-8 
+        border
+      border-amber-700
+        overflow-hidden"
+      >
+        {/* Group */}
         <div
           className="flex
-                    flex-row 
-                    flex-wrap
-                    gap-1.5 
-                    items-center 
-                    justify-center"
+                    gap-1.5
+                    w-max
+                    whitespace-nowrap
+                    animate-horizontalInfiniteScroll"
         >
+          {technologies.map((technology) => {
+            return <LanguageCard name={technology} />;
+          })}
+          {technologies.map((technology) => {
+            return <LanguageCard name={technology} />;
+          })}
           {technologies.map((technology) => {
             return <LanguageCard name={technology} />;
           })}
