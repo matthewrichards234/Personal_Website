@@ -17,9 +17,9 @@ const ProjectCard = ({ images, technologies, description }: ProjectCardI) => {
           <div className="flex flex-col bg-blue-500">
             {/* Technologies */}
             <div className="flex flex-col">
-              {technologies.map((technology) => {
-                return technology;
-              })}
+              {technologies.map((technology) => (
+                <div key={technology}>{technology}</div>
+              ))}
             </div>
             {/* Description */}
             <div>{description}</div>
