@@ -6,12 +6,10 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Resume from "./Resume";
 import Navbar from "./Navbar";
-import ProjectCards from "./ProjectCards";
 const App = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <ProjectCards />
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/" element={<Landing />}></Route>

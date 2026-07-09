@@ -1,3 +1,6 @@
+import ProjectCard from "./ProjectCard";
+import ProjectCards from "./ProjectCards";
+
 const Projects = () => {
   return (
     <div
@@ -26,33 +29,10 @@ const Projects = () => {
         [animation-timeline:view()] 
         [animation-range:entry_0%_cover_30%]"
       >
-        <div className="w-80 h-12 bg-gray-300 rounded-lg"></div>
-        <div className="w-40 h-40 bg-gray-300 rounded-lg"></div>
-        <img
-          src="src/assets/akin-cakiner-9cIkK-hLD9k-unsplash.jpg"
-          alt=""
-          className="w-110 h-80"
-        />
-        <div className="w-64 h-24 bg-gray-300 rounded-lg"></div>
-      </div>
-
-      <div
-        className="flex 
-        flex-col 
-        flex-wrap 
-        gap-4 
-        border
-        mt-3
-        items-center 
-        animate-scrollAppear 
-        [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_20%]"
-      >
-        <div className="w-28 h-56 bg-gray-300 rounded-lg"></div>
-        <img
-          src="src/assets/georgi-kalaydzhiev-OyfQeTOBtxE-unsplash.jpg"
-          alt=""
-          className="w-200 h-180"
+        <ProjectCard
+          images={["Img1", "img2", "img3"]}
+          technologies={["HTML", "CSS", "JavaScript"]}
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
         />
       </div>
 
@@ -68,14 +48,30 @@ const Projects = () => {
         [animation-timeline:view()] 
         [animation-range:entry_0%_cover_20%]"
       >
-        <div className="w-96 h-16 bg-gray-300 rounded-lg"></div>
-        <div className="w-80 h-12 bg-gray-300 rounded-lg"></div>
-        <img
-          src="src/assets/tim-mossholder-mTs6ONxfm7c-unsplash.jpg"
-          alt=""
-          className="w-220 h-150"
+        <ProjectCard
+          images={["Img1", "img2", "img3"]}
+          technologies={["HTML", "CSS", "JavaScript"]}
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
         />
-        <div className="w-96 h-16 bg-gray-300 rounded-lg"></div>
+      </div>
+
+      <div
+        className="flex 
+        flex-col 
+        flex-wrap 
+        gap-4 
+        border
+        mt-3
+        items-center 
+        animate-scrollAppear 
+        [animation-timeline:view()] 
+        [animation-range:entry_0%_cover_20%]"
+      >
+        <ProjectCard
+          images={["Img1", "img2", "img3"]}
+          technologies={["HTML", "CSS", "JavaScript"]}
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
+        />
       </div>
     </div>
   );
