@@ -6,17 +6,12 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Resume from "./Resume";
 import Navbar from "./Navbar";
-import ProjectCard from "./ProjectCard";
-
+import ProjectCards from "./ProjectCards";
 const App = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <ProjectCard
-        images={["Img1", "img2", "img3"]}
-        technologies={["HTML", "CSS", "JavaScript"]}
-        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
-      />
+      <ProjectCards />
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/" element={<Landing />}></Route>
