@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <Navbar></Navbar>
       <ProjectCard
-        images={[]}
+        images={["Img1", "img2", "img3"]}
         technologies={["HTML", "CSS", "JavaScript"]}
         description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
       />

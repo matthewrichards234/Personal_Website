@@ -12,7 +12,13 @@ const ProjectCard = ({ images, technologies, description }: ProjectCardI) => {
         {/* Card Content (images and text) */}
         <div className="flex flex-row h-full">
           {/* Card images (with scroll functionality) */}
-          <div className="bg-amber-500">images</div>
+          <div className="bg-amber-500">
+            <div className="flex flex-col">
+              {images.map((image) => (
+                <div key={image}>{image}</div>
+              ))}
+            </div>
+          </div>
           {/* Card text (title, technologies used, description, etc) */}
           <div className="flex flex-col bg-blue-500">
             {/* Technologies */}
