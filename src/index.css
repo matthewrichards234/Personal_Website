@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
 @theme {
+  --font-manrope: "Manrope", sans-serif;
   --color-indigo: oklch(25.7% 0.09 281.288);
   --animate-wiggle: wiggle 5s ease-in-out infinite;
   --animate-float: float 12s ease-in-out infinite;
