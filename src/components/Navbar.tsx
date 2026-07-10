@@ -5,13 +5,16 @@ const Navbar = () => {
     <div
       className="font-manrope
                   font-normal
-                  text-[22px]"
+                  text-[22px]
+                  pt-2.5
+                  h-12
+                  sticky
+                  top-0
+                  bg-white"
     >
       <nav
         className="flex 
                   flex-row
-                  pt-2.5
-                  h-12
                   "
       >
         <div className="pl-2">
