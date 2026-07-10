@@ -4,23 +4,36 @@ const Navbar = () => {
   return (
     <div
       className="font-manrope
-                  font-normal"
+                  font-normal
+                  text-[22px]"
     >
       <nav
         className="flex 
                   flex-row
-                  pt-3
+                  pt-2.5
                   h-12
                   "
       >
         <div className="pl-2">
-          <NavLink to="/">LOGO</NavLink>
+          <NavLink to="/">
+            <p
+              className="font-bold 
+              text-[24px]
+              transform
+              transition-transform
+              duration-300
+              ease-in-out
+              hover:scale-130"
+            >
+              MR
+            </p>
+          </NavLink>
         </div>
 
         <div
           className="flex 
                         flex-row 
-                        gap-2 
+                        gap-5 
                         ml-auto 
                         mr-4"
         >
