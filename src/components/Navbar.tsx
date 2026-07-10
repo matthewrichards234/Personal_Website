@@ -7,7 +7,7 @@ const Navbar = () => {
                   font-normal
                   text-[22px]
                   pt-2.5
-                  h-12
+                  h-14
                   sticky
                   top-0
                   bg-white"
@@ -24,7 +24,7 @@ const Navbar = () => {
               text-[24px]
               transform
               transition-transform
-              duration-300
+              duration-400
               ease-in-out
               hover:scale-130"
             >
