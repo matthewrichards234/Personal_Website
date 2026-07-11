@@ -10,7 +10,8 @@ const Navbar = () => {
                   h-14
                   sticky
                   top-0
-                  bg-white"
+                  bg-white
+                  z-100"
     >
       <nav
         className="flex 
