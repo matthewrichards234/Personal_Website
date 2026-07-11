@@ -1,5 +1,3 @@
-import ResumeDocument from "./ResumeDocument";
-import { PDFViewer } from "@react-pdf/renderer";
 const Resume = () => {
   return (
     <div
@@ -24,9 +22,13 @@ const Resume = () => {
           />
         </button>
       </div>
-      <PDFViewer>
-        <ResumeDocument />
-      </PDFViewer>
+      <div className="flex justify-center">
+        <iframe
+          src="src/assets/resume_for_website.pdf#toolbar=0"
+          title="Matthew's Resume"
+          className="w-[850px] h-[1100px] border-0"
+        />
+      </div>
     </div>
   );
 };
