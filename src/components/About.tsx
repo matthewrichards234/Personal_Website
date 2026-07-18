@@ -56,9 +56,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="pt-3">
         <div className="flex flex-col items-center">
-          <h1 className="text-6xl">About Me</h1>
+          <div className="w-34 h-34 rounded-full bg-white flex items-center justify-center shadow-xl">
+            <img
+              src="src/assets/linkedinpfp.jpeg"
+              alt="headshot"
+              className="w-28 h-28 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+            />
+          </div>
+          <h1 className="text-4xl ">About Me</h1>
           <p className="">
             I'm a Full Stack Engineer with a strong academic foundation in
             Computer Information Systems, concentrating in Data Analytics, along
