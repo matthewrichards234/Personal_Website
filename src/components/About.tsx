@@ -62,8 +62,18 @@ const About = () => {
             <img
               src="src/assets/linkedinpfp.jpeg"
               alt="headshot"
-              className="w-28 h-28 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+              className="w-28 h-28 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)] z-2"
             />
+            <div
+              className="h-29
+                        w-29
+                       bg-black
+                        z-1
+                        absolute
+                        animate-spin
+                        [animation-duration:_12s]
+                        [clip-path:polygon(50%_0%,64%_20%,88%_11%,80%_38%,100%_50%,76%_62%,90%_88%,64%_78%,50%_100%,36%_78%,10%_88%,24%_62%,0%_50%,20%_38%,12%_11%,36%_20%)]"
+            ></div>
           </div>
           <h1 className="text-4xl ">About Me</h1>
           <p className="">
