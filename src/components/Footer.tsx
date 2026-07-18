@@ -12,13 +12,17 @@ const Footer = () => {
           target="_blank"
         >
           <img
-            src="src/assets/linkedin-svgrepo-com (1).svg"
+            src="src/assets/linkedin-svgrepo-com.svg"
             alt="linkedin-icon"
             className="h-16 w-16"
           />
         </a>
         <a href="https://github.com/matthewrichards234" target="_blank">
-          GITHUB
+          <img
+            src="src/assets/github-svgrepo-com.svg"
+            alt="github icon"
+            className="h-16 w-16"
+          />
         </a>
       </div>
     </div>
