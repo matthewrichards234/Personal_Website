@@ -13,7 +13,8 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
                     bg-amber-400 
                     rounded-2xl 
                     border 
-                    shadow-2xl"
+                    shadow-2xl
+                    overflow-hidden"
     >
       <p>{title}</p>
       <div className="flex flex-row">
