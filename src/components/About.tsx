@@ -45,7 +45,7 @@ const About = () => {
             ></div>
           </div>
           <h1 className="text-4xl ">About Me</h1>
-          <p className="">
+          <p className="w-5/6">
             I'm a Full Stack Engineer with a strong academic foundation in
             Computer Information Systems, concentrating in Data Analytics, along
             with a minor in Computer Science. I enjoy building scalable,
@@ -59,30 +59,33 @@ const About = () => {
           </p>
         </div>
 
-        <h2 className="text-center">Proficient Technolgies</h2>
-        <div className="flex flex-row justify-center">
-          {/* Carousel */}
-          <div
-            className="w-max
-                        p-8 
-                        overflow-hidden"
-          >
-            {/* Group */}
+        <div className="border mt-4">
+          <h2 className="text-center">Proficient Technolgies</h2>
+          <div className="flex flex-row justify-center">
+            {/* Carousel */}
             <div
-              className="flex
+              className="w-max
+                       overflow-hidden
+                       pt-5
+                       pb-5"
+            >
+              {/* Group */}
+              <div
+                className="flex
                     w-max
                     whitespace-nowrap
                     will-change-transform
                     animate-horizontalInfiniteScroll"
-            >
-              {technologies.map((technology) => {
-                return <LanguageCard name={technology} key={technology} />;
-              })}
-              {technologies.map((technology) => {
-                return (
-                  <LanguageCard name={technology} key={`${technology}-2`} />
-                );
-              })}
+              >
+                {technologies.map((technology) => {
+                  return <LanguageCard name={technology} key={technology} />;
+                })}
+                {technologies.map((technology) => {
+                  return (
+                    <LanguageCard name={technology} key={`${technology}-2`} />
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

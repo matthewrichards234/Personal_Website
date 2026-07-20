@@ -11,8 +11,7 @@ const LanguageCard = ({ name }: LanguageCardInterface) => {
                     flex
                     flex-row
                     items-center
-                    justify-center
-                    shadow-lg"
+                    justify-center"
       >
         <p>{name}</p>
       </div>
