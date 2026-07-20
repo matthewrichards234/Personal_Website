@@ -1,4 +1,5 @@
 import LanguageCard from "./LanguageCard";
+import AboutCard from "./AboutCard";
 const About = () => {
   const technologies = [
     "React",
@@ -44,7 +45,7 @@ const About = () => {
                         [clip-path:polygon(50%_0%,64%_20%,88%_11%,80%_38%,100%_50%,76%_62%,90%_88%,64%_78%,50%_100%,36%_78%,10%_88%,24%_62%,0%_50%,20%_38%,12%_11%,36%_20%)] */
             ></div>
           </div>
-          <h1 className="text-4xl ">About Me</h1>
+          <p className="text-4xl">About Me</p>
           <p className="w-5/6">
             I'm a Full Stack Engineer with a strong academic foundation in
             Computer Information Systems, concentrating in Data Analytics, along
@@ -60,7 +61,7 @@ const About = () => {
         </div>
 
         <div className="border mt-4">
-          <h2 className="text-center">Proficient Technolgies</h2>
+          <p className="text-center text-2xl">Proficient Technolgies</p>
           <div className="flex flex-row justify-center">
             {/* Carousel */}
             <div
@@ -90,8 +91,34 @@ const About = () => {
           </div>
         </div>
 
-        <p>Software Journey</p>
-        <p>Fun Facts</p>
+        <div className="border mt-3">
+          <p className="text-4xl text-center">Experience</p>
+          <div className="border">
+            <AboutCard
+              title={"SySoft"}
+              position={"Software Engineer"}
+              dates={"May 2024 - May 2025"}
+              icon={""}
+            />
+          </div>
+          <div className="border">
+            <AboutCard
+              title={"Synth-Tree"}
+              position={"Software Engineer"}
+              dates={"October 2025 - December 2025"}
+              icon={""}
+            />
+          </div>
+          <div className="border">
+            <AboutCard
+              title={"Jewish Communal Fund"}
+              position={"Technology Intern"}
+              dates={"May 2023 - September 2023"}
+              icon={""}
+            />
+          </div>
+        </div>
+        <p className="text-4xl text-center">Fun Facts</p>
       </div>
     </div>
   );
