@@ -122,14 +122,22 @@ const About = () => {
               <div className="w-3/4 flex mx-auto">
                 <ul
                   className="flex 
-                                flex-row 
-                                flex-wrap 
-                                gap-2.5
-                                justify-center
-                                "
+                            flex-row 
+                            flex-wrap 
+                            gap-3.5
+                            justify-center
+                            "
                 >
                   {technologies.map((technology) => {
-                    return <li>{technology}</li>;
+                    return (
+                      <li
+                        className="hover:scale-120
+                                    ease-in-out
+                                    duration-350"
+                      >
+                        {technology}
+                      </li>
+                    );
                   })}
                 </ul>
               </div>
