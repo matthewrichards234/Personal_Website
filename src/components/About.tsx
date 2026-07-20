@@ -121,7 +121,7 @@ const About = () => {
           )}
         </div>
 
-        <div className="border mt-3">
+        <div className="border mt-3 mb-5">
           <p className="text-4xl text-center mb-2.5">Experience</p>
           <div className="flex flex-row justify-evenly">
             <AboutCard
