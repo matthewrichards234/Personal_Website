@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 const About = () => {
@@ -19,6 +20,14 @@ const About = () => {
     "Matplotlib",
     "Jupyter Notebook",
   ];
+  const [activeProficientTechnologies, setActiveProficientTechnologies] =
+    useState(true);
+
+  function toggleProficientTechnologies(): void {
+    console.log("The active state is", activeProficientTechnologies);
+    setActiveProficientTechnologies(!activeProficientTechnologies);
+  }
+
   return (
     // Body
     <div
@@ -61,34 +70,55 @@ const About = () => {
         </div>
 
         <div className="border mt-4">
-          <p className="text-center text-2xl">Proficient Technolgies</p>
-          <div className="flex flex-row justify-center">
-            {/* Carousel */}
-            <div
-              className="w-max
+          <button
+            className="cursor-pointer 
+                        text-center 
+                        text-2xl 
+                        mx-auto
+                        w-full
+                        hover:text-red-600"
+            onClick={toggleProficientTechnologies}
+          >
+            Proficient Technolgies
+          </button>
+          {activeProficientTechnologies ? (
+            <>
+              <div className="flex flex-row justify-center">
+                {/* Carousel */}
+                <div
+                  className="w-max
                        overflow-hidden
                        pt-5
                        pb-5"
-            >
-              {/* Group */}
-              <div
-                className="flex
+                >
+                  {/* Group */}
+                  <div
+                    className="flex
                     w-max
                     whitespace-nowrap
                     will-change-transform
                     animate-horizontalInfiniteScroll"
-              >
-                {technologies.map((technology) => {
-                  return <LanguageCard name={technology} key={technology} />;
-                })}
-                {technologies.map((technology) => {
-                  return (
-                    <LanguageCard name={technology} key={`${technology}-2`} />
-                  );
-                })}
+                  >
+                    {technologies.map((technology) => {
+                      return (
+                        <LanguageCard name={technology} key={technology} />
+                      );
+                    })}
+                    {technologies.map((technology) => {
+                      return (
+                        <LanguageCard
+                          name={technology}
+                          key={`${technology}-2`}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
 
         <div className="border mt-3">
