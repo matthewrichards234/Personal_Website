@@ -26,36 +26,6 @@ const About = () => {
                     min-h-screen
                     font-manrope"
     >
-      <div className="flex flex-row justify-center">
-        {/* Carousel */}
-        <div
-          className="w-250 
-        p-8 
-        border
-      border-amber-700
-        overflow-hidden"
-        >
-          {/* Group */}
-          <div
-            className="flex
-                    gap-1.5
-                    w-max
-                    whitespace-nowrap
-                    animate-horizontalInfiniteScroll"
-          >
-            {technologies.map((technology) => {
-              return <LanguageCard name={technology} />;
-            })}
-            {technologies.map((technology) => {
-              return <LanguageCard name={technology} />;
-            })}
-            {technologies.map((technology) => {
-              return <LanguageCard name={technology} />;
-            })}
-          </div>
-        </div>
-      </div>
-
       <div className="pt-3">
         <div className="flex flex-col items-center">
           <div className="w-34 h-34 rounded-full bg-white flex items-center justify-center shadow-xl">
@@ -67,12 +37,11 @@ const About = () => {
             <div
               className="h-29
                         w-29
-                       bg-black
                         z-1
-                        absolute
-                        animate-spin
+                        absolute"
+              /*        animate-spin
                         [animation-duration:_12s]
-                        [clip-path:polygon(50%_0%,64%_20%,88%_11%,80%_38%,100%_50%,76%_62%,90%_88%,64%_78%,50%_100%,36%_78%,10%_88%,24%_62%,0%_50%,20%_38%,12%_11%,36%_20%)]"
+                        [clip-path:polygon(50%_0%,64%_20%,88%_11%,80%_38%,100%_50%,76%_62%,90%_88%,64%_78%,50%_100%,36%_78%,10%_88%,24%_62%,0%_50%,20%_38%,12%_11%,36%_20%)] */
             ></div>
           </div>
           <h1 className="text-4xl ">About Me</h1>
@@ -88,6 +57,36 @@ const About = () => {
             others, and developing innovative solutions that deliver real
             business value.
           </p>
+        </div>
+
+        <div className="flex flex-row justify-center">
+          {/* Carousel */}
+          <div
+            className="w-250 
+                        p-8 
+                        border
+                      border-amber-700
+                        overflow-hidden"
+          >
+            {/* Group */}
+            <div
+              className="flex
+                    gap-1.5
+                    w-max
+                    whitespace-nowrap
+                    animate-horizontalInfiniteScroll"
+            >
+              {technologies.map((technology) => {
+                return <LanguageCard name={technology} />;
+              })}
+              {technologies.map((technology) => {
+                return <LanguageCard name={technology} />;
+              })}
+              {technologies.map((technology) => {
+                return <LanguageCard name={technology} />;
+              })}
+            </div>
+          </div>
         </div>
 
         <h2>Software Journey</h2>
