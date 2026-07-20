@@ -59,38 +59,36 @@ const About = () => {
           </p>
         </div>
 
+        <h2 className="text-center">Proficient Technolgies</h2>
         <div className="flex flex-row justify-center">
           {/* Carousel */}
           <div
-            className="w-250 
+            className="w-max
                         p-8 
-                        border
-                      border-amber-700
                         overflow-hidden"
           >
             {/* Group */}
             <div
               className="flex
-                    gap-1.5
                     w-max
                     whitespace-nowrap
+                    will-change-transform
                     animate-horizontalInfiniteScroll"
             >
               {technologies.map((technology) => {
-                return <LanguageCard name={technology} />;
+                return <LanguageCard name={technology} key={technology} />;
               })}
               {technologies.map((technology) => {
-                return <LanguageCard name={technology} />;
-              })}
-              {technologies.map((technology) => {
-                return <LanguageCard name={technology} />;
+                return (
+                  <LanguageCard name={technology} key={`${technology}-2`} />
+                );
               })}
             </div>
           </div>
         </div>
 
-        <h2>Software Journey</h2>
-        <h3>Fun Facts</h3>
+        <p>Software Journey</p>
+        <p>Fun Facts</p>
       </div>
     </div>
   );
