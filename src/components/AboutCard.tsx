@@ -14,14 +14,21 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
                     rounded-2xl 
                     border 
                     shadow-2xl
-                    overflow-hidden"
+                    overflow-hidden
+                    w-55
+                    h-23
+                    items-center
+                    justify-center
+                    hover:scale-120
+                    ease-in-out
+                    duration-350"
     >
-      <p>{title}</p>
-      <div className="flex flex-row">
+      <p className="font-semibold">{title}</p>
+      <div className="flex flex-row items-center tetx-sm gap-1">
+        <img src={icon} alt="about card icon" className="w-4 h-4" />
         <p>{position}</p>
       </div>
-      <div className="flex flex-row">
-        <img src={icon} alt="about card icon" className="w-10 h-10" />
+      <div className="flex flex-row text-xs">
         <p>{dates}</p>
       </div>
     </div>

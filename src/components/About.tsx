@@ -92,27 +92,27 @@ const About = () => {
         </div>
 
         <div className="border mt-3">
-          <p className="text-4xl text-center">Experience</p>
-          <AboutCard
-            title={"SySoft"}
-            position={"Software Engineer"}
-            dates={"May 2024 - May 2025"}
-            icon={"src/assets/engineer-worker-svgrepo-com.svg"}
-          />
-
-          {/* <AboutCard
-            title={"Synth-Tree"}
-            position={"Software Engineer"}
-            dates={"October 2025 - December 2025"}
-            icon={""}
-          />
-
-          <AboutCard
-            title={"Jewish Communal Fund"}
-            position={"Technology Intern"}
-            dates={"May 2023 - September 2023"}
-            icon={""}
-          /> */}
+          <p className="text-4xl text-center mb-2.5">Experience</p>
+          <div className="flex flex-row justify-evenly">
+            <AboutCard
+              title={"SySoft"}
+              position={"Software Engineer"}
+              dates={"May 2024 - May 2025"}
+              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+            />
+            <AboutCard
+              title={"Synth-Tree"}
+              position={"Software Engineer"}
+              dates={"October 2025 - December 2025"}
+              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+            />
+            <AboutCard
+              title={"Jewish Communal Fund"}
+              position={"Technology Intern"}
+              dates={"May 2023 - September 2023"}
+              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+            />
+          </div>
         </div>
         <p className="text-4xl text-center">Fun Facts</p>
       </div>
