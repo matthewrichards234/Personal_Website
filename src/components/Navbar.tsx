@@ -41,19 +41,47 @@ const Navbar = () => {
                         ml-auto 
                         mr-4"
         >
-          <NavLink to="/about" className="hover:underline">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-red-500 hover:underline"
+                : "text-black hover:underline"
+            }
+          >
             ABOUT
           </NavLink>
 
-          <NavLink to="/projects" className="hover:underline">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-red-500 hover:underline"
+                : "text-black hover:underline"
+            }
+          >
             PROJECTS
           </NavLink>
 
-          <NavLink to="/resume" className="hover:underline">
+          <NavLink
+            to="/resume"
+            className={({ isActive }) =>
+              isActive
+                ? "text-red-500 hover:underline"
+                : "text-black hover:underline"
+            }
+          >
             RESUME
           </NavLink>
 
-          <NavLink to="/contact" className="hover:underline">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "text-red-500 hover:underline"
+                : "text-black hover:underline"
+            }
+          >
             CONTACT
           </NavLink>
         </div>
