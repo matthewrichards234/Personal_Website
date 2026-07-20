@@ -93,30 +93,26 @@ const About = () => {
 
         <div className="border mt-3">
           <p className="text-4xl text-center">Experience</p>
-          <div className="border">
-            <AboutCard
-              title={"SySoft"}
-              position={"Software Engineer"}
-              dates={"May 2024 - May 2025"}
-              icon={""}
-            />
-          </div>
-          <div className="border">
-            <AboutCard
-              title={"Synth-Tree"}
-              position={"Software Engineer"}
-              dates={"October 2025 - December 2025"}
-              icon={""}
-            />
-          </div>
-          <div className="border">
-            <AboutCard
-              title={"Jewish Communal Fund"}
-              position={"Technology Intern"}
-              dates={"May 2023 - September 2023"}
-              icon={""}
-            />
-          </div>
+          <AboutCard
+            title={"SySoft"}
+            position={"Software Engineer"}
+            dates={"May 2024 - May 2025"}
+            icon={""}
+          />
+
+          {/* <AboutCard
+            title={"Synth-Tree"}
+            position={"Software Engineer"}
+            dates={"October 2025 - December 2025"}
+            icon={""}
+          />
+
+          <AboutCard
+            title={"Jewish Communal Fund"}
+            position={"Technology Intern"}
+            dates={"May 2023 - September 2023"}
+            icon={""}
+          /> */}
         </div>
         <p className="text-4xl text-center">Fun Facts</p>
       </div>

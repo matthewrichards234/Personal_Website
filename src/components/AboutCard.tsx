@@ -7,13 +7,23 @@ interface AboutCardInterface {
 
 const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
   return (
-    <div>
+    <div
+      className="flex 
+                    flex-col 
+                    bg-amber-400 
+                    rounded-2xl 
+                    border 
+                    shadow-2xl"
+    >
       <p>{title}</p>
-      {icon}
-      <ul>
-        <li>{position}</li>
-        <li>{dates}</li>
-      </ul>
+      <div className="flex flex-row">
+        {icon}
+        <p>{position}</p>
+      </div>
+      <div className="flex flex-row">
+        {icon}
+        <p>{dates}</p>
+      </div>
     </div>
   );
 };
