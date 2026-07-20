@@ -21,7 +21,7 @@ const About = () => {
     "Jupyter Notebook",
   ];
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
-    useState(true);
+    useState(false);
 
   function toggleProficientTechnologies(): void {
     console.log("The active state is", activeProficientTechnologies);
@@ -29,7 +29,6 @@ const About = () => {
   }
 
   return (
-    // Body
     <div
       className="bg-blue-900
                     text-white
@@ -37,6 +36,7 @@ const About = () => {
                     font-manrope"
     >
       <div className="pt-3">
+        {/* About Me */}
         <div className="flex flex-col items-center">
           <div className="w-34 h-34 rounded-full bg-white flex items-center justify-center shadow-xl">
             <img
@@ -69,6 +69,7 @@ const About = () => {
           </p>
         </div>
 
+        {/* Proficient Technologies */}
         <div className="border mt-4">
           <button
             className="cursor-pointer 
@@ -117,10 +118,26 @@ const About = () => {
               </div>
             </>
           ) : (
-            <></>
+            <>
+              <div className="w-3/4 flex mx-auto">
+                <ul
+                  className="flex 
+                                flex-row 
+                                flex-wrap 
+                                gap-2.5
+                                justify-center
+                                "
+                >
+                  {technologies.map((technology) => {
+                    return <li>{technology}</li>;
+                  })}
+                </ul>
+              </div>
+            </>
           )}
         </div>
 
+        {/* Experience */}
         <div className="border mt-3 mb-5">
           <p className="text-4xl text-center mb-2.5">Experience</p>
           <div className="flex flex-row justify-evenly">
