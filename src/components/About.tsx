@@ -97,7 +97,7 @@ const About = () => {
             title={"SySoft"}
             position={"Software Engineer"}
             dates={"May 2024 - May 2025"}
-            icon={""}
+            icon={"src/assets/engineer-worker-svgrepo-com.svg"}
           />
 
           {/* <AboutCard

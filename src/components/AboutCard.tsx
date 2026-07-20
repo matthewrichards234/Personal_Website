@@ -18,11 +18,10 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
     >
       <p>{title}</p>
       <div className="flex flex-row">
-        {icon}
         <p>{position}</p>
       </div>
       <div className="flex flex-row">
-        {icon}
+        <img src={icon} alt="about card icon" className="w-10 h-10" />
         <p>{dates}</p>
       </div>
     </div>
