@@ -10,7 +10,8 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
     <div
       className="flex 
                     flex-col 
-                    bg-amber-400 
+                    bg-white
+                    text-black 
                     rounded-2xl 
                     border 
                     shadow-2xl
@@ -26,9 +27,9 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
       <p className="font-semibold">{title}</p>
       <div className="flex flex-row items-center tetx-sm gap-1">
         <img src={icon} alt="about card icon" className="w-4 h-4" />
-        <p>{position}</p>
+        <p className="text-xs">{position}</p>
       </div>
-      <div className="flex flex-row text-xs">
+      <div className="flex flex-row text-[10px] opacity-87">
         <p>{dates}</p>
       </div>
     </div>

@@ -21,7 +21,7 @@ const About = () => {
     "Jupyter Notebook",
   ];
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
-    useState(false);
+    useState(true);
 
   function toggleProficientTechnologies(): void {
     console.log("The active state is", activeProficientTechnologies);
@@ -70,7 +70,7 @@ const About = () => {
         </div>
 
         {/* Proficient Technologies */}
-        <div className="border mt-4">
+        <div className="mt-4">
           <button
             className="cursor-pointer 
                         text-center 
@@ -146,8 +146,8 @@ const About = () => {
         </div>
 
         {/* Experience */}
-        <div className="border mt-3 mb-5">
-          <p className="text-4xl text-center mb-2.5">Experience</p>
+        <div className="mt-3 mb-5">
+          <p className="text-4xl text-center mb-2.5">Experience & Education</p>
           <div className="flex flex-row justify-evenly">
             <AboutCard
               title={"SySoft"}
@@ -166,6 +166,20 @@ const About = () => {
               position={"Technology Intern"}
               dates={"May 2023 - September 2023"}
               icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+            />
+          </div>
+          <div className="mt-5 flex justify-center gap-8">
+            <AboutCard
+              title={"Baruch College"}
+              position="BBA Data Analysis Major, Computer Science minor"
+              dates={"August 2022 - December 2025"}
+              icon={"src/assets/student-cap-svgrepo-com.svg"}
+            />
+            <AboutCard
+              title={"TripleTen"}
+              position="Software Engineer Student"
+              dates={"June 2025 - December 2025"}
+              icon={"src/assets/student-cap-svgrepo-com.svg"}
             />
           </div>
         </div>
