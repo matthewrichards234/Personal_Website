@@ -74,8 +74,8 @@ const About = () => {
             className="cursor-pointer 
                         text-center 
                         text-2xl 
+                        flex
                         mx-auto
-                        w-full
                         hover:text-red-600"
             onClick={toggleProficientTechnologies}
           >
