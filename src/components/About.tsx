@@ -199,7 +199,7 @@ const About = () => {
           <p className="text-4xl text-center">Fun Facts</p>
           <AboutModal
             title="Fitness"
-            image=""
+            image="src/assets/fitness-photo.jpeg"
             isOpen={openModal}
             handleClose={handleCloseModal}
           />

@@ -16,33 +16,35 @@ const AboutModal = ({
     <div
       className={
         isOpen
-          ? "fixed z-3 p-25 top-0 left-0 w-full h-full overflow-auto bg-black/40"
+          ? "fixed inset-0 z-50 flex items-center justify-center bg-black/50"
           : "hidden"
       }
     >
-      {/* Modal content */}
-      <div
-        className="
-                bg-white
-                border
-                rounded-2xl
-                w-122
-                h-75
-                "
-      >
-        <p className="text-black text-center">{title}</p>
-        <img src={image} alt="about modal image" />
-        <span
-          className="cursor-pointer 
-                    text-black
-                    relative
-                    bottom-12
-                    left-116
-                    "
+      <div className="relative w-[500px] rounded-2xl bg-white p-6 shadow-2xl">
+        {/* Close Button */}
+        <button
           onClick={handleClose}
+          className="absolute right-4 top-3 text-3xl text-gray-500 transition hover:text-black cursor-pointer"
         >
           &times;
-        </span>
+        </button>
+
+        {/* Title */}
+        <h2 className="mb-6 text-center text-2xl font-bold text-gray-900">
+          {title}
+        </h2>
+
+        {/* Image */}
+        <img
+          src={image}
+          alt={title}
+          className="mx-auto h-64 w-full rounded-lg object-cover"
+        />
+
+        {/* Body */}
+        <p className="mt-6 text-center text-gray-700">
+          Add your description here.
+        </p>
       </div>
     </div>
   );
