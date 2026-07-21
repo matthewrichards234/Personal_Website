@@ -3,6 +3,11 @@ import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 import AboutModal from "./AboutModal";
 const About = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const [activeProficientTechnologies, setActiveProficientTechnologies] =
+    useState(true);
+
   const technologies = [
     "React",
     "HTML",
@@ -21,12 +26,18 @@ const About = () => {
     "Matplotlib",
     "Jupyter Notebook",
   ];
-  const [activeProficientTechnologies, setActiveProficientTechnologies] =
-    useState(true);
 
   function toggleProficientTechnologies(): void {
     console.log("The active state is", activeProficientTechnologies);
     setActiveProficientTechnologies(!activeProficientTechnologies);
+  }
+
+  function handleOpenModal(): void {
+    setOpenModal(true);
+  }
+
+  function handleCloseModal(): void {
+    setOpenModal(!openModal);
   }
 
   return (
@@ -186,7 +197,15 @@ const About = () => {
         </div>
         <div>
           <p className="text-4xl text-center">Fun Facts</p>
-          <AboutModal title="Fitness" />
+          <AboutModal
+            title="Fitness"
+            image=""
+            isOpen={openModal}
+            handleClose={handleCloseModal}
+          />
+          <button className="cursor-pointer" onClick={handleOpenModal}>
+            Open Modal
+          </button>
         </div>
       </div>
     </div>

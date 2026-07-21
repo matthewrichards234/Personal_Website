@@ -3,30 +3,24 @@ import { useState } from "react";
 interface AboutModalInterface {
   title: string;
   image: string;
+  isOpen: boolean;
+  handleClose: () => void;
 }
 
-const AboutModal = ({ title, image }: AboutModalInterface) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleCloseModal() {
-    console.log(isOpen);
-    setIsOpen(false);
-  }
+const AboutModal = ({
+  title,
+  image,
+  isOpen,
+  handleClose,
+}: AboutModalInterface) => {
   return (
     // Modal
     <div
-      className="
-                hidden
-                fixed
-                z-1
-                p-25
-                top-0
-                left-0
-                w-full
-                h-full
-                overflow-auto
-                bg-black/40
-                "
+      className={
+        isOpen
+          ? "fixed z-1 p-25 top-0 left-0 w-full h-full overflow-auto bg-black/40"
+          : "hidden"
+      }
     >
       {/* Modal content */}
       <div
@@ -39,7 +33,9 @@ const AboutModal = ({ title, image }: AboutModalInterface) => {
       >
         {title}
         <img src={image} alt="about modal image" />
-        <span className="cursor-pointer">&times;</span>
+        <span className="cursor-pointer bg-black" onClick={handleClose}>
+          &times;
+        </span>
       </div>
     </div>
   );
