@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
+import AboutModal from "./AboutModal";
 const About = () => {
   const technologies = [
     "React",
@@ -183,7 +184,10 @@ const About = () => {
             />
           </div>
         </div>
-        <p className="text-4xl text-center">Fun Facts</p>
+        <div>
+          <p className="text-4xl text-center">Fun Facts</p>
+          <AboutModal title="Fitness" />
+        </div>
       </div>
     </div>
   );
