@@ -1,11 +1,46 @@
 const Contact = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
+    <div className="relative min-h-screen overflow-hidden bg-white">
       {/* Animated Waves */}
-      <div className="absolute inset-0">
-        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[43%] bg-blue-500/20 animate-wave1" />
-        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[46%] bg-cyan-400/15 animate-wave2" />
-        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[41%] bg-indigo-500/20 animate-wave3" />
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          className="
+      absolute
+      left-1/2
+      bottom-0
+      w-[320vh]
+      h-[320vh]
+      rounded-[43%]
+      bg-blue-500/20
+      animate-wave1
+    "
+        />
+
+        <div
+          className="
+      absolute
+      left-1/2
+      bottom-0
+      w-[320vh]
+      h-[320vh]
+      rounded-[46%]
+      bg-cyan-400/20
+      animate-wave2
+    "
+        />
+
+        <div
+          className="
+      absolute
+      left-1/2
+      bottom-0
+      w-[320vh]
+      h-[320vh]
+      rounded-[41%]
+      bg-indigo-500/20
+      animate-wave3
+    "
+        />
       </div>
 
       {/* Content */}
@@ -41,7 +76,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
