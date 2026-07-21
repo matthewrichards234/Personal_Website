@@ -3,7 +3,7 @@ import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 import AboutModal from "./AboutModal";
 const About = () => {
-  const [openModal, setOpenModal] = useState(true);
+  const [activateModal, setActivateModal] = useState(null);
 
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
     useState(true);
@@ -32,12 +32,12 @@ const About = () => {
     setActiveProficientTechnologies(!activeProficientTechnologies);
   }
 
-  function handleOpenModal(): void {
-    setOpenModal(true);
+  function handleOpenModal(modal: string): void {
+    setActivateModal(modal);
   }
 
   function handleCloseModal(): void {
-    setOpenModal(!openModal);
+    setActivateModal(null);
   }
 
   return (
@@ -180,7 +180,7 @@ const About = () => {
               icon={"src/assets/engineer-worker-svgrepo-com.svg"}
             />
           </div>
-          <div className="mt-5 flex justify-center gap-8">
+          <div className="mt-5 flex justify-center gap-30">
             <AboutCard
               title={"Baruch College"}
               position="BBA Data Analysis Major, Computer Science minor"
@@ -199,15 +199,50 @@ const About = () => {
           <p className="text-4xl text-center">Fun Facts</p>
           <AboutModal
             title="Fitness"
-            image="src/assets/fitness-photo.jpeg"
+            image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
             description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. Here I am on my graduation day deadlifting 315lbs!"
-            isOpen={openModal}
+            isOpen={activateModal === "fitness"}
             handleClose={handleCloseModal}
           />
-          <button className="cursor-pointer" onClick={handleOpenModal}>
-            Open Modal
-          </button>
+          <AboutModal
+            title="Reading"
+            image="src/assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg"
+            description="I am an avid reader! Some of my favorite authors include Malcolm Gladwell, Robert Greene, and Haruki Marukami. You can also find me reading manga."
+            isOpen={activateModal === "reading"}
+            handleClose={handleCloseModal}
+          />
+          <AboutModal
+            title="Movies"
+            image="src/assets/krists-luhaers-AtPWnYNDJnM-unsplash.jpg"
+            description="I've become quite the movie critic lately. As of 2026, my favorite movie has been Obsession. It was very refreshing to see an indie movie have such an effect on me."
+            isOpen={activateModal === "movies"}
+            handleClose={handleCloseModal}
+          />
         </div>
+        <button
+          className="cursor-pointer"
+          onClick={() => {
+            handleOpenModal("fitness");
+          }}
+        >
+          Open Fitness
+        </button>
+        <button
+          className="cursor-pointer"
+          onClick={() => {
+            handleOpenModal("reading");
+          }}
+        >
+          Open Reading
+        </button>
+        <button
+          className="cursor-pointer"
+          onClick={() => {
+            handleOpenModal("movies");
+          }}
+        >
+          Open Movies
+        </button>
       </div>
     </div>
   );
