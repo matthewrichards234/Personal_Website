@@ -8,28 +8,32 @@ interface AboutCardInterface {
 const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
   return (
     <div
-      className="flex 
-                    flex-col 
-                    bg-white
-                    text-black 
-                    rounded-2xl 
-                    border 
-                    shadow-2xl
-                    overflow-hidden
-                    w-55
-                    h-23
-                    items-center
-                    justify-center
-                    hover:scale-120
-                    ease-in-out
-                    duration-350"
+      className="
+                w-56
+                rounded-2xl
+                bg-white
+                text-black
+                shadow-xl
+                border
+                p-4
+                flex
+                flex-col
+                items-center
+                gap-2
+                transition-all
+                duration-300
+                ease-out
+                hover:-translate-y-1
+                hover:scale-105
+                
+              "
     >
       <p className="font-semibold">{title}</p>
-      <div className="flex flex-row items-center tetx-sm gap-1">
+      <div className="flex flex-row items-center gap-1">
         <img src={icon} alt="about card icon" className="w-4 h-4" />
-        <p className="text-xs">{position}</p>
+        <p className="text-[10px] text-center p-0">{position}</p>
       </div>
-      <div className="flex flex-row text-[10px] opacity-87">
+      <div className="flex flex-row text-[8px] opacity-87">
         <p>{dates}</p>
       </div>
     </div>
