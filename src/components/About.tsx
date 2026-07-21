@@ -3,7 +3,7 @@ import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 import AboutModal from "./AboutModal";
 const About = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
     useState(true);
