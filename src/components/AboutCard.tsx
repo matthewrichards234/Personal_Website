@@ -1,7 +1,7 @@
 interface AboutCardInterface {
   title: string;
-  position: string;
-  dates: string;
+  position?: string;
+  dates?: string;
   icon: string;
 }
 

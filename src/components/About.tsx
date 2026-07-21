@@ -195,54 +195,68 @@ const About = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="p-3 m-3">
           <p className="text-4xl text-center">Fun Facts</p>
-          <AboutModal
-            title="Fitness"
-            image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
-            description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. My max deadlift is 315lbs!"
-            isOpen={activateModal === "fitness"}
-            handleClose={handleCloseModal}
-          />
-          <AboutModal
-            title="Reading"
-            image="src/assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg"
-            description="I am an avid reader! Some of my favorite authors include Malcolm Gladwell, Robert Greene, and Haruki Marukami. You can also find me reading manga."
-            isOpen={activateModal === "reading"}
-            handleClose={handleCloseModal}
-          />
-          <AboutModal
-            title="Movies"
-            image="src/assets/krists-luhaers-AtPWnYNDJnM-unsplash.jpg"
-            description="I've become quite the movie critic lately. As of 2026, my favorite movie has been Obsession. It was very refreshing to see an indie movie have such an effect on me."
-            isOpen={activateModal === "movies"}
-            handleClose={handleCloseModal}
-          />
+          <p className="text-lg text-center mb-3 text-gray-300">
+            Click a fun fact to open more info
+          </p>
+          <div className="flex flex-row justify-evenly">
+            <AboutModal
+              title="Fitness"
+              image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
+              description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. My max deadlift is 315lbs!"
+              isOpen={activateModal === "fitness"}
+              handleClose={handleCloseModal}
+            />
+            <AboutModal
+              title="Reading"
+              image="src/assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg"
+              description="I am an avid reader! Some of my favorite authors include Malcolm Gladwell, Robert Greene, and Haruki Marukami. You can also find me reading manga."
+              isOpen={activateModal === "reading"}
+              handleClose={handleCloseModal}
+            />
+            <AboutModal
+              title="Movies"
+              image="src/assets/krists-luhaers-AtPWnYNDJnM-unsplash.jpg"
+              description="I've become quite the movie critic lately. As of 2026, my favorite movie has been Obsession. It was very refreshing to see an indie movie have such an effect on me."
+              isOpen={activateModal === "movies"}
+              handleClose={handleCloseModal}
+            />
+            <button
+              className="cursor-pointer"
+              onClick={() => {
+                handleOpenModal("fitness");
+              }}
+            >
+              <AboutCard
+                title="Fitness"
+                icon="src/assets/dumbell-svgrepo-com.svg"
+              />
+            </button>
+            <button
+              className="cursor-pointer"
+              onClick={() => {
+                handleOpenModal("reading");
+              }}
+            >
+              <AboutCard
+                title="Reading"
+                icon="src/assets/books-svgrepo-com.svg"
+              />
+            </button>
+            <button
+              className="cursor-pointer"
+              onClick={() => {
+                handleOpenModal("movies");
+              }}
+            >
+              <AboutCard
+                title="Movies"
+                icon="src/assets/movies-svgrepo-com.svg"
+              />
+            </button>
+          </div>
         </div>
-        <button
-          className="cursor-pointer"
-          onClick={() => {
-            handleOpenModal("fitness");
-          }}
-        >
-          Open Fitness
-        </button>
-        <button
-          className="cursor-pointer"
-          onClick={() => {
-            handleOpenModal("reading");
-          }}
-        >
-          Open Reading
-        </button>
-        <button
-          className="cursor-pointer"
-          onClick={() => {
-            handleOpenModal("movies");
-          }}
-        >
-          Open Movies
-        </button>
       </div>
     </div>
   );
