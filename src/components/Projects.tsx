@@ -4,7 +4,7 @@ import ProjectCards from "./ProjectCards";
 const Projects = () => {
   return (
     <div
-      className="bg-indigo 
+      className="bg-blue-900
                     text-white
                     min-h-screen"
     >

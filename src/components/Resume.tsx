@@ -1,7 +1,7 @@
 const Resume = () => {
   return (
     <div
-      className="bg-indigo 
+      className="bg-blue-900 
                     w-screen 
                     h-screen
                     text-white"

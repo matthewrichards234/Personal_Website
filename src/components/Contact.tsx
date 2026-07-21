@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <div
-      className="bg-indigo 
-                    text-white
+      className="bg-white
+                    text-black
                     min-h-screen"
     >
       <div
@@ -28,7 +28,7 @@ const Contact = () => {
           provided below
         </h3>
         <div className="flex flex-row items-center gap-2">
-          <img src="src/assets/mail.png" alt="email icon" />
+          <img src="src/assets/mail.png" alt="email icon" className="w-5 h-5" />
           <a
             href="mailto:matthewrichards234@gmail.com"
             className="hover:text-red-700"
