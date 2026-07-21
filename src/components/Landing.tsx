@@ -1,7 +1,7 @@
 const Landing = () => {
   return (
     <div
-      className="bg-indigo 
+      className="bg-blue-900
                     text-white"
     >
       <div
