@@ -1,43 +1,47 @@
 const Contact = () => {
   return (
-    <div
-      className="bg-white
-                    text-black
-                    min-h-screen"
-    >
-      <div
-        className="flex 
-                      flex-col 
-                      items-center 
-                      justify-center
-                      pt-12"
-      >
+    <section className="relative min-h-screen overflow-hidden bg-white">
+      {/* Animated Waves */}
+      <div className="absolute inset-0">
+        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[43%] bg-blue-500/20 animate-wave1" />
+        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[46%] bg-cyan-400/15 animate-wave2" />
+        <div className="absolute left-1/2 bottom-0 w-[320vh] h-[320vh] -translate-x-1/2 translate-y-[75%] rounded-[41%] bg-indigo-500/20 animate-wave3" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
         <h1
           className="
-          text-9xl 
-          bg-clip-text 
-          text-transparent
-          bg-[linear-gradient(to_right,rgb(250,78,10)_10%,rgb(247,12,204)_25%,rgb(0,106,255)_50%,rgb(48,248,255)_75%,rgb(250,78,10)_100%)]
-          bg-size-[200%_auto]
-          animate-gradientText"
+            text-7xl md:text-9xl
+            font-bold
+            bg-clip-text
+            text-transparent
+            bg-[linear-gradient(to_right,rgb(250,78,10)_10%,rgb(247,12,204)_25%,rgb(0,106,255)_50%,rgb(48,248,255)_75%,rgb(250,78,10)_100%)]
+            bg-[length:200%_auto]
+            animate-gradientText
+          "
         >
-          Contact Me
+          Let's Connect
         </h1>
-        <h3 className="text-3xl">
-          For any business inquires, please contact me with the information
-          provided below
-        </h3>
-        <div className="flex flex-row items-center gap-2">
-          <img src="src/assets/mail.png" alt="email icon" className="w-5 h-5" />
+
+        <p className="mt-6 max-w-2xl text-xl text-gray-700 leading-relaxed">
+          Whether you have an opportunity, an interesting project, or just want
+          to chat about software engineering, I'd love to hear from you.
+        </p>
+
+        <div className="mt-12 flex flex-col gap-6">
           <a
             href="mailto:matthewrichards234@gmail.com"
-            className="hover:text-red-700"
+            className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
           >
-            Matthewrichards234@gmail.com
+            <img src="src/assets/mail.png" alt="Email" className="h-6 w-6" />
+            <span className="text-lg font-semibold text-black">
+              matthewrichards234@gmail.com
+            </span>
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

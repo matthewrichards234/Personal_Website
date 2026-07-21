@@ -12,6 +12,9 @@
   --animate-fade-in: fade-in linear forwards;
   --animate-horizontalInfiniteScroll: horizontalInfiniteScroll 45s linear
     infinite;
+  --animate-wave1: wave-spin 18s linear infinite;
+  --animate-wave2: wave-spin 25s linear infinite reverse;
+  --animate-wave3: wave-spin 32s linear infinite;
 }
 
 @keyframes wiggle {
@@ -106,5 +109,14 @@
     to {
       transform: translateX(-50%);
     }
+  }
+}
+@keyframes wave-spin {
+  from {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }
