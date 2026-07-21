@@ -15,14 +15,14 @@ const Footer = () => {
             <img
               src="src/assets/linkedin-svgrepo-com.svg"
               alt="linkedin-icon"
-              className="h-16 w-16"
+              className="h-16 w-16 hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <a href="https://github.com/matthewrichards234" target="_blank">
             <img
               src="src/assets/github-svgrepo-com.svg"
               alt="github icon"
-              className="h-16 w-16"
+              className="h-16 w-16 hover:scale-110 duration-300 ease-in-out"
             />
           </a>
         </div>
