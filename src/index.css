@@ -3,10 +3,6 @@
 
 @theme {
   --font-manrope: "Manrope", sans-serif;
-  --animate-wiggle: wiggle 5s ease-in-out infinite;
-  --animate-float: float 12s ease-in-out infinite;
-  --animate-orbit: orbit 10s linear infinite;
-  --animate-rotating: rotating 10s linear infinite;
   --animate-gradientText: gradientText 3s linear infinite;
   --animate-scrollAppear: scrollAppear 5s linear;
   --animate-fade-in: fade-in linear forwards;
@@ -15,71 +11,10 @@
   --animate-wave1: wave-spin 18s linear infinite;
   --animate-wave2: wave-spin 25s linear infinite reverse;
   --animate-wave3: wave-spin 32s linear infinite;
+  --animate-pulseAnimate: pulseAnimate 6s ease-in-out infinite;
+  --animate-colorAnimate: colorAnimate 8s linear infinite;
 }
 
-@keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-@keyframes float {
-  0% {
-    transform: translate(0px, 0px);
-  }
-
-  12.5% {
-    transform: translate(120px, -30px);
-  }
-
-  25% {
-    transform: translate(220px, 0px);
-  }
-
-  37.5% {
-    transform: translate(280px, 80px);
-  }
-
-  50% {
-    transform: translate(220px, 180px);
-  }
-
-  62.5% {
-    transform: translate(120px, 220px);
-  }
-
-  75% {
-    transform: translate(0px, 180px);
-  }
-
-  87.5% {
-    transform: translate(-40px, 80px);
-  }
-
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-@keyframes orbit {
-  from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes gradientText {
   0% {
     background-position: 200% 50%;
@@ -118,5 +53,17 @@
 
   to {
     transform: translate(-50%, 75%) rotate(360deg);
+  }
+}
+@keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    transform: scale(2);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes colorAnimate {
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
