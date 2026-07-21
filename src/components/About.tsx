@@ -200,7 +200,7 @@ const About = () => {
           <AboutModal
             title="Fitness"
             image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
-            description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. Here I am on my graduation day deadlifting 315lbs!"
+            description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. My max deadlift is 315lbs!"
             isOpen={activateModal === "fitness"}
             handleClose={handleCloseModal}
           />
