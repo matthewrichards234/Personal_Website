@@ -200,6 +200,7 @@ const About = () => {
           <AboutModal
             title="Fitness"
             image="src/assets/fitness-photo.jpeg"
+            description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. Here I am on my graduation day deadlifting 315lbs!"
             isOpen={openModal}
             handleClose={handleCloseModal}
           />

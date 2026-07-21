@@ -1,6 +1,7 @@
 interface AboutModalInterface {
   title: string;
   image: string;
+  description: string;
   isOpen: boolean;
   handleClose: () => void;
 }
@@ -8,6 +9,7 @@ interface AboutModalInterface {
 const AboutModal = ({
   title,
   image,
+  description,
   isOpen,
   handleClose,
 }: AboutModalInterface) => {
@@ -38,13 +40,11 @@ const AboutModal = ({
         <img
           src={image}
           alt={title}
-          className="mx-auto h-64 w-full rounded-lg object-cover"
+          className="mx-auto h-64 w-full rounded-lg object-cover object-[center_30%]"
         />
 
         {/* Body */}
-        <p className="mt-6 text-center text-gray-700">
-          Add your description here.
-        </p>
+        <p className="mt-6 text-center text-gray-700">{description}</p>
       </div>
     </div>
   );
