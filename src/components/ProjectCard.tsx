@@ -43,6 +43,7 @@ const ProjectCard = ({
                               h-full 
                               shrink-0
                               rounded-2xl 
+                              shadow-2xl
                               animate-scrollAppear 
                               [animation-timeline:view()] 
                               [animation-range:entry_0%_cover_100%]"

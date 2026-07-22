@@ -26,7 +26,7 @@ const Projects = () => {
         className="flex 
                     flex-col 
                     flex-wrap 
-                    my-20
+                    my-40
                     items-center 
                     animate-scrollAppear
                     [animation-timeline:view()] 
@@ -52,7 +52,7 @@ const Projects = () => {
         className="flex 
                       flex-col 
                       flex-wrap 
-                      my-20
+                      my-40
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -72,7 +72,7 @@ const Projects = () => {
         className="flex 
                       flex-col 
                       flex-wrap 
-                      my-20
+                      my-40
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -90,7 +90,7 @@ const Projects = () => {
         className="flex 
                     flex-col 
                     flex-wrap 
-                    my-20
+                    my-40
                     items-center 
                     animate-scrollAppear 
                     [animation-timeline:view()] 

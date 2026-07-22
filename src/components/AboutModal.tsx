@@ -22,7 +22,7 @@ const AboutModal = ({
           : "hidden"
       }
     >
-      <div className="relative w-[500px] rounded-2xl bg-white p-6 shadow-2xl">
+      <div className="relative w-125 rounded-2xl bg-white p-6 shadow-2xl">
         {/* Close Button */}
         <button
           onClick={handleClose}
@@ -40,7 +40,13 @@ const AboutModal = ({
         <img
           src={image}
           alt={title}
-          className="mx-auto h-64 w-full rounded-lg object-cover object-[center_30%]"
+          className="mx-auto 
+                      h-64 
+                      w-full 
+                      rounded-lg 
+                      object-cover 
+                      object-[center_30%] 
+                      shadow-2xl"
         />
 
         {/* Body */}
