@@ -19,7 +19,10 @@ const Landing = () => {
       >
         <h1
           className="text-[130px]
-                    sm:text-[400px] 
+                    sm:text-[160px]
+                    md:text-[190px]
+                    lg:text-[220px]
+                    xl:text-[400px]
                     font-bold 
                     "
         >
@@ -38,8 +41,10 @@ const Landing = () => {
                     -translate-y-1/2
                     h-55
                     w-55
-                    sm:h-170
-                    sm:w-170
+                    sm:size-80
+                    md:size-90
+                    lg:size-120
+                    xl:size-170
                     rounded-full
                     bg-white
                     opacity-70
