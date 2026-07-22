@@ -5,17 +5,20 @@ const Projects = () => {
     <div
       className="bg-blue-900
                     text-white
-                    min-h-screen"
+                    min-h-screen
+                    font-manrope"
     >
       <h1
         className="text-8xl 
                       text-center
-                      border 
-                      h-screen 
-                      w-screen"
+                      p-10
+                      "
       >
-        PROJECTS
+        Projects
       </h1>
+      <h2 className="text-3xl text-center text-gray-300 p-3">
+        A brief tour of some of my favorite projects
+      </h2>
       <div
         className="flex 
         flex-col 
