@@ -29,9 +29,10 @@ const Projects = () => {
         items-center 
         animate-scrollAppear
         [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_30%]"
+        [animation-range:entry_0%_cover_40%]"
       >
         <ProjectCard
+          title="WTWR"
           images={["Img1", "img2", "img3"]}
           technologies={["HTML", "CSS", "JavaScript"]}
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."

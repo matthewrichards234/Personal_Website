@@ -27,9 +27,7 @@
   @keyframes scrollAppear {
     from {
       opacity: 0;
-      transform: scale(0.5);
-      /* Animations scroll in from right */
-      /* transform: translateX(-100px); */
+      transform: scale(0.4);
     }
     to {
       opacity: 1;

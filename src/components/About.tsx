@@ -61,9 +61,6 @@ const About = () => {
                         w-29
                         z-1
                         absolute"
-              /*        animate-spin
-                        [animation-duration:_12s]
-                        [clip-path:polygon(50%_0%,64%_20%,88%_11%,80%_38%,100%_50%,76%_62%,90%_88%,64%_78%,50%_100%,36%_78%,10%_88%,24%_62%,0%_50%,20%_38%,12%_11%,36%_20%)] */
             ></div>
           </div>
           <p className="text-4xl">About Me</p>
