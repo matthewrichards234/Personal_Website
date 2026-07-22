@@ -25,10 +25,26 @@ const ProjectCard = ({
         {/* Card Content (images and text) */}
         <div className="flex flex-row h-full">
           {/* Card images (with scroll functionality) */}
-          <div className="bg-amber-500 w-full h-full">
-            <div className="flex flex-col overflow-y-auto h-full">
+          <div className="bg-gray-400 w-full h-full">
+            <div
+              className="flex 
+            flex-col 
+            overflow-y-auto 
+            h-full
+            p-3
+            rounded-2xl"
+            >
               {images.map((image) => (
-                <div key={image} className="border h-100 shrink-0">
+                <div
+                  key={image}
+                  className="border 
+                              h-full 
+                              shrink-0
+                              rounded-2xl 
+                              animate-scrollAppear 
+                              [animation-timeline:view()] 
+                              [animation-range:entry_0%_cover_20%]"
+                >
                   {image}
                 </div>
               ))}
