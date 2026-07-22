@@ -82,7 +82,13 @@ const ProjectCard = ({
                   className="hover:scale-120 
                               ease-in-out 
                               duration-350 
-                              text-lg"
+                              text-lg
+                              bg-blue-100
+text-blue-900
+px-4
+py-2
+rounded-full
+                              "
                 >
                   {technology}
                 </div>
