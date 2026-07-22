@@ -60,10 +60,17 @@ const ProjectCard = ({
           >
             <p className="font-bold text-5xl text-center mt-13 mb-5">{title}</p>
             {/* Technologies */}
-            <p className="font-bold text-3xl ml-5 mb-5">Technologies Used</p>
-            <div className="flex flex-row gap-5 ml-5.5">
+            <p className="font-bold text-3xl ml-5 mb-5 text-blue-900">
+              Technologies Used
+            </p>
+            <div className="flex flex-row gap-5 ml-5.5 text-blue-900">
               {technologies.map((technology) => (
-                <div key={technology}>{technology}</div>
+                <div
+                  key={technology}
+                  className="hover:scale-120 ease-in-out duration-350"
+                >
+                  {technology}
+                </div>
               ))}
             </div>
             {/* Description */}

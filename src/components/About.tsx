@@ -128,7 +128,7 @@ const About = () => {
             </>
           ) : (
             <>
-              <div className="w-3/4 flex mx-auto">
+              <div className="w-3/4 flex mx-auto justify-center">
                 <ul
                   className="flex 
                             flex-row 
