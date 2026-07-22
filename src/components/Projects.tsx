@@ -44,7 +44,10 @@ const Projects = () => {
             "Joi",
             "HTML / CSS",
           ]}
-          description="WTWR is a full-stack weather application that provides personalized outfit recommendations based on real-time weather conditions in a user's city. Built with React, Redux, and React Router, the application delivers a responsive user experience through reusable components, custom hooks, and centralized state management. A Node.js and Express.js backend handles user authentication and securely manages user data, creating a seamless experience that combines dynamic weather information with personalized recommendations."
+          description="WTWR is a full-stack weather application that provides personalized outfit recommendations based on real-time weather conditions in a user's city. 
+          Built with React, Redux, and React Router, the application delivers a responsive user experience through reusable components, custom hooks, and centralized state management. 
+          A Node.js and Express.js backend handles user authentication and securely manages user data, creating a seamless experience that combines dynamic weather information with personalized recommendations."
+          githubLink="https://github.com/matthewrichards234/se_project_react"
         />
       </div>
 
@@ -65,6 +68,7 @@ const Projects = () => {
           description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. 
                         Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. 
                         It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience."
+          githubLink="https://github.com/matthewrichards234/se_project_spots"
         />
       </div>
 
@@ -82,7 +86,10 @@ const Projects = () => {
           title="Coffee Shop Landing Page"
           images={[imgTest, imgTest, imgTest]}
           technologies={["HTML / CSS"]}
-          description="Coffee Shop Landing Page is a responsive front-end website built with HTML and CSS to showcase a modern coffee shop's brand, menu, and atmosphere. The project features Flexbox-based layouts, smooth CSS animations, embedded YouTube videos, and interactive forms to create an engaging user experience while demonstrating responsive design principles and clean, semantic front-end development."
+          description="Coffee Shop Landing Page is a responsive front-end website built with HTML and CSS to showcase a modern coffee shop's brand, menu, and atmosphere. 
+                        The project features Flexbox-based layouts, smooth CSS animations, embedded YouTube videos, and interactive forms to create an engaging user experience while 
+                        demonstrating responsive design principles and clean, semantic front-end development."
+          githubLink="https://github.com/matthewrichards234/se_project_coffeeshop-ft"
         />
       </div>
 
@@ -100,7 +107,11 @@ const Projects = () => {
           title="Mortgage Amortization Table"
           images={[imgTest]}
           technologies={["C++"]}
-          description="Mortgage Amortization Calculator is a C++ application designed to help users understand how mortgage payments are distributed over the life of a loan by visualizing principal, interest, and remaining balance. The program performs precise amortization calculations, dynamically generates a complete payment schedule using loops and file handling, and exports the results as a clean, column-aligned table for easy reading and local download."
+          description="Mortgage Amortization Calculator is a C++ application designed to help users understand how mortgage payments 
+                      are distributed over the life of a loan by visualizing principal, interest, and remaining balance. The program performs precise 
+                      amortization calculations, dynamically generates a complete payment schedule using loops and file handling, and exports the results as a clean, 
+                      column-aligned table for easy reading and local download."
+          githubLink="https://github.com/matthewrichards234/Mortgage-Amortization-Table"
         />
       </div>
       <span className="mx-7"></span>

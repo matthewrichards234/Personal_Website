@@ -3,6 +3,7 @@ interface ProjectCardI {
   images: string[];
   technologies: string[];
   description: string;
+  githubLink: string;
 }
 
 const ProjectCard = ({
@@ -10,6 +11,7 @@ const ProjectCard = ({
   images,
   technologies,
   description,
+  githubLink,
 }: ProjectCardI) => {
   return (
     <div>
@@ -106,7 +108,30 @@ const ProjectCard = ({
             >
               Description
             </p>
-            <div className="ml-5.5">{description}</div>
+            <div className="ml-5.5 text-xl/11">{description}</div>
+
+            {/* Button */}
+            <div className="mt-auto mb-3 ml-2">
+              <a href={githubLink} target="_blank">
+                <button
+                  className="
+                        rounded-xl
+                        border
+                        border-blue-900
+                        px-6
+                        py-3
+                        text-blue-900
+                        transition
+                        duration-300
+                        hover:bg-blue-900
+                        hover:text-white
+                        cursor-pointer
+                      "
+                >
+                  GitHub
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
