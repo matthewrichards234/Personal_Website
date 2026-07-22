@@ -27,7 +27,6 @@ const Projects = () => {
         flex-col 
         flex-wrap 
         gap-4 
-        border
         mt-3
         items-center 
         animate-scrollAppear

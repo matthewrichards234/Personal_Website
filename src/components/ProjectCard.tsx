@@ -50,6 +50,7 @@ const ProjectCard = ({
               ))}
             </div>
           </div>
+
           {/* Card text (title, technologies used, description, etc) */}
           <div
             className="flex
@@ -59,22 +60,43 @@ const ProjectCard = ({
                       text-black"
           >
             <p className="font-bold text-5xl text-center mt-13 mb-5">{title}</p>
+
             {/* Technologies */}
             <p className="font-bold text-3xl ml-5 mb-5 text-blue-900">
               Technologies Used
             </p>
-            <div className="flex flex-row gap-5 ml-5.5 text-blue-900">
+
+            {/* List of Technologies */}
+            <div
+              className="flex 
+                            flex-row 
+                            gap-5 
+                            flex-wrap 
+                            ml-5.5 
+                            text-blue-900"
+            >
               {technologies.map((technology) => (
                 <div
                   key={technology}
-                  className="hover:scale-120 ease-in-out duration-350"
+                  className="hover:scale-120 
+                              ease-in-out 
+                              duration-350 
+                              text-lg"
                 >
                   {technology}
                 </div>
               ))}
             </div>
+
             {/* Description */}
-            <p className="font-bold text-3xl ml-5 mb-5 mt-7 text-blue-900">
+            <p
+              className="font-bold 
+                          text-3xl 
+                          ml-5 
+                          mb-5 
+                          mt-7 
+                          text-blue-900"
+            >
               Description
             </p>
             <div className="ml-5.5">{description}</div>
