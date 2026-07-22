@@ -8,8 +8,23 @@ const Landing = () => {
                     h-screen 
                     animate-colorAnimate"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-2">
-        <h1 className="text-[400px] font-bold">MR</h1>
+      <div
+        className="absolute 
+                    top-1/2 
+                    left-1/2 
+                    -translate-x-1/2 
+                    -translate-y-1/2 
+                    text-black 
+                    z-2"
+      >
+        <h1
+          className="text-[130px]
+                    sm:text-[400px] 
+                    font-bold 
+                    "
+        >
+          MR
+        </h1>
       </div>
       {pulses.map((i) => (
         <span
@@ -21,8 +36,10 @@ const Landing = () => {
                     left-1/2
                     -translate-x-1/2
                     -translate-y-1/2
-                    h-170
-                    w-170
+                    h-55
+                    w-55
+                    sm:h-170
+                    sm:w-170
                     rounded-full
                     bg-white
                     opacity-70
