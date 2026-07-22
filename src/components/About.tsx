@@ -142,7 +142,8 @@ const About = () => {
                       <li
                         className="hover:scale-120
                                     ease-in-out
-                                    duration-350"
+                                    duration-350
+                                    cursor-default"
                       >
                         {technology}
                       </li>
