@@ -65,7 +65,27 @@ const Projects = () => {
           title="Spots"
           images={[imgTest, imgTest, imgTest]}
           technologies={["HTML / CSS", "JavaScript"]}
-          description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience.."
+          description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience."
+        />
+      </div>
+
+      <div
+        className="flex 
+                      flex-col 
+                      flex-wrap 
+                      gap-4 
+                      border
+                      mt-3
+                      items-center 
+                      animate-scrollAppear 
+                      [animation-timeline:view()] 
+                      [animation-range:entry_0%_cover_20%]"
+      >
+        <ProjectCard
+          title="Coffee Shop Landing Page"
+          images={[imgTest, imgTest, imgTest]}
+          technologies={["HTML / CSS"]}
+          description="Coffee Shop Landing Page is a responsive front-end website built with HTML and CSS to showcase a modern coffee shop's brand, menu, and atmosphere. The project features Flexbox-based layouts, smooth CSS animations, embedded YouTube videos, and interactive forms to create an engaging user experience while demonstrating responsive design principles and clean, semantic front-end development."
         />
       </div>
 
@@ -82,10 +102,10 @@ const Projects = () => {
         [animation-range:entry_0%_cover_20%]"
       >
         <ProjectCard
-          title="Library landing page"
-          images={[imgTest, imgTest, imgTest]}
-          technologies={["HTML", "CSS", "JavaScript"]}
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
+          title="Mortgage Amortization Table"
+          images={[imgTest]}
+          technologies={["C++"]}
+          description="Mortgage Amortization Calculator is a C++ application designed to help users understand how mortgage payments are distributed over the life of a loan by visualizing principal, interest, and remaining balance. The program performs precise amortization calculations, dynamically generates a complete payment schedule using loops and file handling, and exports the results as a clean, column-aligned table for easy reading and local download."
         />
       </div>
       <span className="mx-7"></span>
