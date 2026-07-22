@@ -22,7 +22,8 @@ const ProjectCard = ({
                     w-610 
                     h-230 
                     rounded-xl 
-                    overflow-hidden"
+                    overflow-hidden
+                    "
       >
         {/* Card Content (images and text) */}
         <div className="flex flex-row h-full">
@@ -35,7 +36,7 @@ const ProjectCard = ({
                           h-full
                           p-3
                           rounded-2xl
-                          space-y-30
+                          space-y-100
                           "
             >
               {images.map((image) => (
