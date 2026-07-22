@@ -33,13 +33,13 @@ const ProjectCard = ({
                           h-full
                           p-3
                           rounded-2xl
+                          space-y-30
                           "
             >
               {images.map((image) => (
                 <img
                   src={image}
                   className="border
-                              m-3 
                               h-full 
                               shrink-0
                               rounded-2xl 
