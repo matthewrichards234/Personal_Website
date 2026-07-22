@@ -25,19 +25,21 @@ const ProjectCard = ({
         {/* Card Content (images and text) */}
         <div className="flex flex-row h-full">
           {/* Card images (with scroll functionality) */}
-          <div className="bg-gray-400 w-full h-full">
+          <div className="bg-white w-full h-full text-black">
             <div
               className="flex 
                           flex-col 
                           overflow-y-auto 
                           h-full
                           p-3
-                          rounded-2xl"
+                          rounded-2xl
+                          "
             >
               {images.map((image) => (
                 <div
                   key={image}
-                  className="border 
+                  className="border
+                              m-3 
                               h-full 
                               shrink-0
                               rounded-2xl 
