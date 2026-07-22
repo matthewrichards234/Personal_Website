@@ -41,15 +41,15 @@ const Projects = () => {
 
       <div
         className="flex 
-        flex-col 
-        flex-wrap 
-        gap-4 
-        border
-        mt-3
-        items-center 
-        animate-scrollAppear 
-        [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_20%]"
+                      flex-col 
+                      flex-wrap 
+                      gap-4 
+                      border
+                      mt-3
+                      items-center 
+                      animate-scrollAppear 
+                      [animation-timeline:view()] 
+                      [animation-range:entry_0%_cover_20%]"
       >
         <ProjectCard
           title="Spots"
@@ -78,6 +78,7 @@ const Projects = () => {
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
         />
       </div>
+      <span className="mx-7"></span>
     </div>
   );
 };

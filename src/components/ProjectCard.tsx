@@ -28,11 +28,11 @@ const ProjectCard = ({
           <div className="bg-gray-400 w-full h-full">
             <div
               className="flex 
-            flex-col 
-            overflow-y-auto 
-            h-full
-            p-3
-            rounded-2xl"
+                          flex-col 
+                          overflow-y-auto 
+                          h-full
+                          p-3
+                          rounded-2xl"
             >
               {images.map((image) => (
                 <div
@@ -77,7 +77,7 @@ const ProjectCard = ({
             <p className="font-bold text-3xl ml-5 mb-5 mt-7 text-blue-900">
               Description
             </p>
-            <div>{description}</div>
+            <div className="ml-5.5">{description}</div>
           </div>
         </div>
       </div>
