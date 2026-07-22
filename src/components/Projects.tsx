@@ -52,6 +52,7 @@ const Projects = () => {
         [animation-range:entry_0%_cover_20%]"
       >
         <ProjectCard
+          title="Spots"
           images={["Img1", "img2", "img3"]}
           technologies={["HTML", "CSS", "JavaScript"]}
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
@@ -71,6 +72,7 @@ const Projects = () => {
         [animation-range:entry_0%_cover_20%]"
       >
         <ProjectCard
+          title="Library landing page"
           images={["Img1", "img2", "img3"]}
           technologies={["HTML", "CSS", "JavaScript"]}
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."

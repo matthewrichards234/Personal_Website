@@ -74,6 +74,9 @@ const ProjectCard = ({
               ))}
             </div>
             {/* Description */}
+            <p className="font-bold text-3xl ml-5 mb-5 mt-7 text-blue-900">
+              Description
+            </p>
             <div>{description}</div>
           </div>
         </div>
