@@ -36,8 +36,8 @@ const ProjectCard = ({
                           "
             >
               {images.map((image) => (
-                <div
-                  key={image}
+                <img
+                  src={image}
                   className="border
                               m-3 
                               h-full 
@@ -46,9 +46,7 @@ const ProjectCard = ({
                               animate-scrollAppear 
                               [animation-timeline:view()] 
                               [animation-range:entry_0%_cover_20%]"
-                >
-                  {image}
-                </div>
+                />
               ))}
             </div>
           </div>

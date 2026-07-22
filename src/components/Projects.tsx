@@ -1,3 +1,6 @@
+// Test images
+import imgTest from "/Users/matthewrichards/Desktop/Projects/Active/Personal_Website/src/assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg";
+
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
@@ -33,7 +36,7 @@ const Projects = () => {
       >
         <ProjectCard
           title="WTWR"
-          images={["Img1", "img2", "img3"]}
+          images={[imgTest, imgTest, imgTest]}
           technologies={[
             "React",
             "JavaScript",
@@ -61,7 +64,7 @@ const Projects = () => {
       >
         <ProjectCard
           title="Spots"
-          images={["Img1", "img2", "img3"]}
+          images={[imgTest, imgTest, imgTest]}
           technologies={["HTML / CSS", "JavaScript"]}
           description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience.."
         />
@@ -81,7 +84,7 @@ const Projects = () => {
       >
         <ProjectCard
           title="Library landing page"
-          images={["Img1", "img2", "img3"]}
+          images={[imgTest, imgTest, imgTest]}
           technologies={["HTML", "CSS", "JavaScript"]}
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, maxime."
         />
