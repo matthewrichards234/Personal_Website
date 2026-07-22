@@ -24,14 +24,13 @@ const Projects = () => {
       </h2>
       <div
         className="flex 
-        flex-col 
-        flex-wrap 
-        gap-4 
-        mt-3
-        items-center 
-        animate-scrollAppear
-        [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_100%]"
+                    flex-col 
+                    flex-wrap 
+                    my-20
+                    items-center 
+                    animate-scrollAppear
+                    [animation-timeline:view()] 
+                    [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="WTWR"
@@ -53,9 +52,7 @@ const Projects = () => {
         className="flex 
                       flex-col 
                       flex-wrap 
-                      gap-4 
-                      border
-                      mt-3
+                      my-20
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -75,9 +72,7 @@ const Projects = () => {
         className="flex 
                       flex-col 
                       flex-wrap 
-                      gap-4 
-                      border
-                      mt-3
+                      my-20
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -93,15 +88,13 @@ const Projects = () => {
 
       <div
         className="flex 
-        flex-col 
-        flex-wrap 
-        gap-4 
-        border
-        mt-3
-        items-center 
-        animate-scrollAppear 
-        [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_100%]"
+                    flex-col 
+                    flex-wrap 
+                    my-20
+                    items-center 
+                    animate-scrollAppear 
+                    [animation-timeline:view()] 
+                    [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="Mortgage Amortization Table"
