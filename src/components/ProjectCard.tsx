@@ -54,12 +54,14 @@ const ProjectCard = ({
           <div
             className="flex
                       flex-col 
-                    bg-blue-500 
-                      w-1/2"
+                    bg-white 
+                      w-1/2
+                      text-black"
           >
-            <p>{title}</p>
+            <p className="font-bold text-5xl text-center mt-13 mb-5">{title}</p>
             {/* Technologies */}
-            <div className="flex flex-col">
+            <p className="font-bold text-3xl ml-5 mb-5">Technologies Used</p>
+            <div className="flex flex-row gap-5 ml-5.5">
               {technologies.map((technology) => (
                 <div key={technology}>{technology}</div>
               ))}
