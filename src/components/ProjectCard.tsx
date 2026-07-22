@@ -45,7 +45,7 @@ const ProjectCard = ({
                               rounded-2xl 
                               animate-scrollAppear 
                               [animation-timeline:view()] 
-                              [animation-range:entry_0%_cover_20%]"
+                              [animation-range:entry_0%_cover_100%]"
                 />
               ))}
             </div>

@@ -31,7 +31,7 @@ const Projects = () => {
         items-center 
         animate-scrollAppear
         [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_40%]"
+        [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="WTWR"
@@ -59,13 +59,15 @@ const Projects = () => {
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
-                      [animation-range:entry_0%_cover_20%]"
+                      [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="Spots"
           images={[imgTest, imgTest, imgTest]}
           technologies={["HTML / CSS", "JavaScript"]}
-          description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience."
+          description="Spots is a responsive social media application designed for students and young professionals to share posts, like content, and interact in real time. 
+                        Built with HTML, CSS, JavaScript, Webpack, and npm, the application integrates RESTful API requests (GET, POST, PUT, and DELETE) to manage user data and content seamlessly. 
+                        It also features client-side form validation, dynamic DOM manipulation, interactive modal windows, and loading states to provide a smooth, responsive, and user-friendly experience."
         />
       </div>
 
@@ -79,7 +81,7 @@ const Projects = () => {
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
-                      [animation-range:entry_0%_cover_20%]"
+                      [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="Coffee Shop Landing Page"
@@ -99,7 +101,7 @@ const Projects = () => {
         items-center 
         animate-scrollAppear 
         [animation-timeline:view()] 
-        [animation-range:entry_0%_cover_20%]"
+        [animation-range:entry_0%_cover_100%]"
       >
         <ProjectCard
           title="Mortgage Amortization Table"
