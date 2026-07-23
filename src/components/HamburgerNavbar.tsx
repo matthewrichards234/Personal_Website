@@ -1,28 +1,45 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 interface HamburgerNavbarInterface {
   isOpen: boolean;
+  handleNavlinkClick: () => void;
 }
 
-const HamburgerNavbar = ({ isOpen }: HamburgerNavbarInterface) => {
+const HamburgerNavbar = ({
+  isOpen,
+  handleNavlinkClick,
+}: HamburgerNavbarInterface) => {
   return (
     <div className={isOpen ? "visible" : "hidden"}>
       <nav
         className="flex 
                     flex-col 
-                    bg-white 
+                    bg-white
+                    opacity-80 
                     h-full 
                     w-full 
                     gap-8 
                     items-center 
                     justify-center 
-                    fixed"
+                    fixed
+                    "
       >
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="/about">ABOUT</NavLink>
-        <NavLink to="/projects">PROJECTS</NavLink>
-        <NavLink to="/resume">RESUME</NavLink>
-        <NavLink to="/contact">CONTACT</NavLink>
+        <NavLink to="/" onClick={handleNavlinkClick}>
+          HOME
+        </NavLink>
+        <NavLink to="/about" onClick={handleNavlinkClick}>
+          ABOUT
+        </NavLink>
+        <NavLink to="/projects" onClick={handleNavlinkClick}>
+          PROJECTS
+        </NavLink>
+        <NavLink to="/resume" onClick={handleNavlinkClick}>
+          RESUME
+        </NavLink>
+        <NavLink to="/contact" onClick={handleNavlinkClick}>
+          CONTACT
+        </NavLink>
       </nav>
     </div>
   );

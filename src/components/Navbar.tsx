@@ -8,6 +8,14 @@ const Navbar = () => {
   function handleOpenSideNavbar() {
     setSideNavbar(!sideNavbar);
   }
+
+  function handleNavigationClick(e: Event): void {
+    console.log("Button pressed", e.target);
+    if (sideNavbar == true) {
+      setSideNavbar(false);
+    }
+  }
+
   return (
     <div
       className="font-manrope
@@ -19,7 +27,10 @@ const Navbar = () => {
                   bg-white
                   z-100"
     >
-      <HamburgerNavbar isOpen={sideNavbar} />
+      <HamburgerNavbar
+        isOpen={sideNavbar}
+        handleNavlinkClick={handleNavigationClick}
+      />
       {/* Mobile view */}
       <div className="block md:hidden">
         <nav
@@ -35,6 +46,7 @@ const Navbar = () => {
                         font-bold 
                         text-[24px]
                         ml-2
+                        pt-2.5
                         "
             >
               MR
