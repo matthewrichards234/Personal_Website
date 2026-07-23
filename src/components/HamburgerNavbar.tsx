@@ -7,7 +7,17 @@ interface HamburgerNavbarInterface {
 const HamburgerNavbar = ({ isOpen }: HamburgerNavbarInterface) => {
   return (
     <div className={isOpen ? "visible" : "hidden"}>
-      <nav className="flex flex-col bg-white h-full gap-8 items-center">
+      <nav
+        className="flex 
+                    flex-col 
+                    bg-white 
+                    h-full 
+                    w-full 
+                    gap-8 
+                    items-center 
+                    justify-center 
+                    fixed"
+      >
         <NavLink to="/">HOME</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
         <NavLink to="/projects">PROJECTS</NavLink>
