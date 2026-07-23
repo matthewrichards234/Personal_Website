@@ -4,12 +4,9 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [sideNavbar, setSideNavbar] = useState(true);
+  const [sideNavbar, setSideNavbar] = useState(false);
   function handleOpenSideNavbar() {
-    setSideNavbar(true);
-  }
-  function handleCloseSideNavbar() {
-    setSideNavbar(false);
+    setSideNavbar(!sideNavbar);
   }
   return (
     <div
@@ -47,7 +44,7 @@ const Navbar = () => {
             <img
               src={hamburgerMenuIcon}
               alt="hamburger icon"
-              className="size-14"
+              className="size-14 fixed top-0 right-0"
             />
           </button>
         </nav>
