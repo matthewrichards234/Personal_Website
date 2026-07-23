@@ -1,3 +1,4 @@
+import hamburgerMenuIcon from "../assets/hamburger-menu-svgrepo-com.svg";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
