@@ -1,7 +1,16 @@
 import hamburgerMenuIcon from "../assets/hamburger-menu-svgrepo-com.svg";
+import HamburgerNavbar from "./HamburgerNavbar";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [sideNavbar, setSideNavbar] = useState(true);
+  function handleOpenSideNavbar() {
+    setSideNavbar(true);
+  }
+  function handleCloseSideNavbar() {
+    setSideNavbar(false);
+  }
   return (
     <div
       className="font-manrope
@@ -13,6 +22,7 @@ const Navbar = () => {
                   bg-white
                   z-100"
     >
+      <HamburgerNavbar isOpen={sideNavbar} />
       {/* Mobile view */}
       <div className="block md:hidden">
         <nav
@@ -33,12 +43,7 @@ const Navbar = () => {
               MR
             </p>
           </NavLink>
-          <button
-            className="mr-2"
-            onClick={() => {
-              console.log("I've been clicked.");
-            }}
-          >
+          <button className="mr-2" onClick={handleOpenSideNavbar}>
             <img
               src={hamburgerMenuIcon}
               alt="hamburger icon"
