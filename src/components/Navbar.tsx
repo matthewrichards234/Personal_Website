@@ -7,7 +7,6 @@ const Navbar = () => {
       className="font-manrope
                   font-normal
                   text-[22px]
-                  pt-2.5
                   h-14
                   sticky
                   top-0
@@ -16,27 +15,36 @@ const Navbar = () => {
     >
       {/* Mobile view */}
       <div className="block md:hidden">
-        {" "}
         <nav
           className="flex 
-                  flex-row
+                    flex-row
+                    justify-between
+                    items-center
                   "
         >
-          <div className="pl-2">
-            <NavLink to="/">
-              <p
-                className="font-bold 
-              text-[24px]
-              transform
-              transition-transform
-              duration-400
-              ease-in-out
-              hover:scale-130"
-              >
-                MR
-              </p>
-            </NavLink>
-          </div>
+          <NavLink to="/">
+            <p
+              className="
+                        font-bold 
+                        text-[24px]
+                        ml-2
+                        "
+            >
+              MR
+            </p>
+          </NavLink>
+          <button
+            className="mr-2"
+            onClick={() => {
+              console.log("I've been clicked.");
+            }}
+          >
+            <img
+              src={hamburgerMenuIcon}
+              alt="hamburger icon"
+              className="size-14"
+            />
+          </button>
         </nav>
       </div>
       {/* Desktop view */}
@@ -44,6 +52,7 @@ const Navbar = () => {
         <nav
           className="flex 
                   flex-row
+                  pt-2.5
                   "
         >
           <div className="pl-2">
