@@ -10,7 +10,6 @@ const Navbar = () => {
   }
 
   function handleNavigationClick(e: Event): void {
-    console.log("Button pressed", e.target);
     if (sideNavbar == true) {
       setSideNavbar(false);
     }

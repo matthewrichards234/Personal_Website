@@ -45,7 +45,8 @@ const About = () => {
       className="bg-blue-900
                     text-white
                     min-h-screen
-                    font-manrope"
+                    font-manrope
+                    "
     >
       <div className="pt-3">
         {/* About Me */}
@@ -158,7 +159,7 @@ const About = () => {
         {/* Experience */}
         <div className="mt-3 mb-5">
           <p className="text-4xl text-center mb-2.5">Experience & Education</p>
-          <div className="flex flex-row justify-evenly">
+          <div className="flex flex-col justify-evenly items-center gap-2 md:flex-row">
             <AboutCard
               title={"SySoft"}
               position={"Software Engineer"}
@@ -178,7 +179,7 @@ const About = () => {
               icon={"src/assets/engineer-worker-svgrepo-com.svg"}
             />
           </div>
-          <div className="mt-5 flex justify-center gap-30">
+          <div className="mt-2 flex flex-col justify-evenly items-center gap-2 md:flex-row">
             <AboutCard
               title={"Baruch College"}
               position="BBA Data Analysis Major, Computer Science minor"
@@ -193,12 +194,21 @@ const About = () => {
             />
           </div>
         </div>
+
+        {/* Fun Facts */}
         <div className="p-3 m-3">
           <p className="text-4xl text-center">Fun Facts</p>
           <p className="text-lg text-center mb-3 text-gray-300">
             Click a fun fact to open more info
           </p>
-          <div className="flex flex-row justify-evenly">
+          <div
+            className="flex 
+                          flex-col 
+                          justify-center 
+                          items-center 
+                          gap-2 
+                          md:flex-row"
+          >
             <AboutModal
               title="Fitness"
               image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
