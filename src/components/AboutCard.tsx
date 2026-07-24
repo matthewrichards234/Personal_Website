@@ -25,13 +25,14 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
                 flex
                 flex-col
                 items-center
+                justify-center
                 gap-2
                 transition-all
                 duration-300
                 ease-out
                 hover:-translate-y-1
                 hover:scale-105
-              "
+                "
     >
       <p
         className="font-semibold 
