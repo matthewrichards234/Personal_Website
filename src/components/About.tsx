@@ -190,11 +190,11 @@ const About = () => {
           <p className="text-5xl text-center mb-4">Experience & Education</p>
           <div
             className="flex 
-                          flex-col 
-                          justify-evenly 
-                          items-center g
-                          ap-2 
-                          md:flex-row"
+                      flex-col 
+                      justify-evenly 
+                      items-center
+                      gap-2 
+                      md:flex-row"
           >
             <AboutCard
               title={"SySoft"}
