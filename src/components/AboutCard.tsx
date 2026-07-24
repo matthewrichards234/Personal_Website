@@ -10,6 +10,7 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
     <div
       className="
                 w-56
+                sm:w-60
                 rounded-2xl
                 bg-white
                 text-black
@@ -25,6 +26,7 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
                 ease-out
                 hover:-translate-y-1
                 hover:scale-105
+
                 
               "
     >

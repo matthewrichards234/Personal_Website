@@ -6,7 +6,7 @@ const About = () => {
   const [activateModal, setActivateModal] = useState(null);
 
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
-    useState(false);
+    useState(true);
 
   const technologies = [
     "React",
@@ -187,8 +187,15 @@ const About = () => {
 
         {/* Experience */}
         <div className="mt-3 mb-5">
-          <p className="text-4xl text-center mb-2.5">Experience & Education</p>
-          <div className="flex flex-col justify-evenly items-center gap-2 md:flex-row">
+          <p className="text-5xl text-center mb-4">Experience & Education</p>
+          <div
+            className="flex 
+                          flex-col 
+                          justify-evenly 
+                          items-center g
+                          ap-2 
+                          md:flex-row"
+          >
             <AboutCard
               title={"SySoft"}
               position={"Software Engineer"}
