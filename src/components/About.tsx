@@ -6,7 +6,7 @@ const About = () => {
   const [activateModal, setActivateModal] = useState(null);
 
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
-    useState(true);
+    useState(false);
 
   const technologies = [
     "React",
@@ -51,21 +51,34 @@ const About = () => {
       <div className="pt-3">
         {/* About Me */}
         <div className="flex flex-col items-center">
-          <div className="w-34 h-34 rounded-full bg-white flex items-center justify-center shadow-xl">
+          <div
+            className="size-34
+                      sm:size-36 
+                      md:size-38
+                      lg:size-40
+                      rounded-full 
+                      bg-white 
+                      flex 
+                      items-center 
+                      justify-center 
+                      shadow-xl"
+          >
             <img
               src="src/assets/linkedinpfp.jpeg"
               alt="headshot"
-              className="w-28 h-28 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)] z-2"
+              className="
+              size-28
+              sm:size-30 
+              md:size-32
+              lg:size-34
+              rounded-full 
+              shadow-[0_10px_30px_rgba(0,0,0,0.35)] 
+              z-2
+              "
             />
-            <div
-              className="h-29
-                        w-29
-                        z-1
-                        absolute"
-            ></div>
           </div>
-          <p className="text-4xl">About Me</p>
-          <p className="w-5/6">
+          <p className="text-5xl py-1">About Me</p>
+          <p className="w-5/6 text-lg md:text-2xl py-2">
             I'm a Full Stack Engineer with a strong academic foundation in
             Computer Information Systems, concentrating in Data Analytics, along
             with a minor in Computer Science. I enjoy building scalable,
@@ -81,17 +94,27 @@ const About = () => {
 
         {/* Proficient Technologies */}
         <div className="mt-4">
+          <p
+            className="text-center 
+                        md:text-5xl
+                        text-3xl "
+          >
+            Proficient Technolgies
+          </p>
           <button
             className="cursor-pointer 
                         text-center 
                         text-2xl 
                         flex
                         mx-auto
-                        hover:text-red-600"
+                        text-gray-300
+                        hover:text-black
+                        mt-2"
             onClick={toggleProficientTechnologies}
           >
-            Proficient Technolgies
+            click me to stop the animation
           </button>
+
           {activeProficientTechnologies ? (
             <>
               <div className="flex flex-row justify-center">
@@ -136,6 +159,8 @@ const About = () => {
                             flex-wrap 
                             gap-3.5
                             justify-center
+                            mb-6
+                            mt-3
                             "
                 >
                   {technologies.map((technology) => {
@@ -144,7 +169,11 @@ const About = () => {
                         className="hover:scale-120
                                     ease-in-out
                                     duration-350
-                                    cursor-default"
+                                    cursor-default
+                                    text-xl
+                                    sm:text-2xl
+                                    lg:text-3xl
+                                    "
                       >
                         {technology}
                       </li>

@@ -11,7 +11,11 @@ const LanguageCard = ({ name }: LanguageCardInterface) => {
                     flex
                     flex-row
                     items-center
-                    justify-center"
+                    justify-center
+                    text-xl
+                    md:text-2xl
+                    lg:text-3xl
+                    lg:p-6"
       >
         <p>{name}</p>
       </div>
