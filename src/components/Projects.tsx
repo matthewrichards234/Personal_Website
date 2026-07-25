@@ -13,14 +13,21 @@ const Projects = () => {
                     font-manrope"
     >
       <h1
-        className="text-8xl 
+        className="text-8xl
+                    sm:text-9xl 
                       text-center
                       p-10
                       "
       >
         Projects
       </h1>
-      <h2 className="text-3xl text-center text-gray-300 p-3">
+      <h2
+        className="text-3xl 
+                    sm:text-5xl/16
+                    text-center 
+                    text-gray-300 
+                    p-3"
+      >
         A brief tour of some of my favorite projects
       </h2>
       <div
@@ -28,6 +35,7 @@ const Projects = () => {
                     flex-col 
                     flex-wrap 
                     my-40
+                    sm:space-y-100
                     items-center 
                     animate-scrollAppear
                     [animation-timeline:view()] 
@@ -57,6 +65,7 @@ const Projects = () => {
                       flex-col 
                       flex-wrap 
                       my-40
+                      sm:my-100
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -78,6 +87,7 @@ const Projects = () => {
                       flex-col 
                       flex-wrap 
                       my-40
+                      sm:my-100
                       items-center 
                       animate-scrollAppear 
                       [animation-timeline:view()] 
@@ -99,6 +109,7 @@ const Projects = () => {
                     flex-col 
                     flex-wrap 
                     my-40
+                    sm:space-y-100
                     items-center 
                     animate-scrollAppear 
                     [animation-timeline:view()] 
