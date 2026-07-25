@@ -152,12 +152,12 @@ const About = () => {
             </>
           ) : (
             <>
-              <div className="w-3/4 flex mx-auto justify-center">
+              <div className="w-1/2 flex mx-auto justify-center flex-wrap">
                 <ul
                   className="flex 
                             flex-row 
                             flex-wrap 
-                            gap-3.5
+                            gap-8
                             justify-center
                             mb-6
                             mt-3
