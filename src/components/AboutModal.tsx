@@ -22,7 +22,16 @@ const AboutModal = ({
           : "hidden"
       }
     >
-      <div className="relative w-125 rounded-2xl bg-white p-6 shadow-2xl">
+      <div
+        className="relative 
+                      w-125 
+                      sm:w-175
+                      sm:h-125
+                      rounded-2xl 
+                      bg-white 
+                      p-6 
+                      shadow-2xl"
+      >
         {/* Close Button */}
         <button
           onClick={handleClose}
@@ -45,12 +54,23 @@ const AboutModal = ({
                       w-full 
                       rounded-lg 
                       object-cover 
-                      object-[center_30%] 
+                      object-[center_30%]
+                      sm:h-75
+                      md:h-80 
                       shadow-2xl"
         />
 
         {/* Body */}
-        <p className="mt-6 text-center text-gray-700">{description}</p>
+        <p
+          className="sm:text-lg
+                      md:text-lg
+                      lg:text-xl
+                      mt-6 
+                      text-center 
+                      text-gray-700"
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
