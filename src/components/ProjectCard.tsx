@@ -23,8 +23,10 @@ const ProjectCard = ({
                     rounded-xl 
                     overflow-hidden
                     sm:w-175
+                    sm:h-120
                     md:w-260
-                    lg:w-550
+                    lg:w-530
+                    xl:w-600
                     "
       >
         {/* Card Content (images and text) */}
