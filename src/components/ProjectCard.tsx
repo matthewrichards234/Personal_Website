@@ -26,7 +26,9 @@ const ProjectCard = ({
                     sm:h-120
                     md:w-260
                     lg:w-530
+                    lg:h-220
                     xl:w-600
+                    xl:h-240
                     "
       >
         {/* Card Content (images and text) */}
