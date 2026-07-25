@@ -13,8 +13,9 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
                 sm:w-60
                 sm:h-40
                 md:h-45
-                lg:h-48
                 md:w-62
+                lg:h-48
+                lg:w-110
                 rounded-2xl
                 bg-white
                 text-black

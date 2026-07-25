@@ -27,6 +27,9 @@ const AboutModal = ({
                       w-125 
                       sm:w-175
                       sm:h-125
+                      md:h-135
+                      lg:w-185
+                      lg:h-140
                       rounded-2xl 
                       bg-white 
                       p-6 
@@ -64,7 +67,7 @@ const AboutModal = ({
         <p
           className="sm:text-lg
                       md:text-lg
-                      lg:text-xl
+                      lg:text-2xl
                       mt-6 
                       text-center 
                       text-gray-700"
