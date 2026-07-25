@@ -19,10 +19,12 @@ const ProjectCard = ({
       <div
         className="border 
                     shadow-2xl 
-                    w-610 
                     h-230 
                     rounded-xl 
                     overflow-hidden
+                    sm:w-175
+                    md:w-260
+                    lg:w-550
                     "
       >
         {/* Card Content (images and text) */}

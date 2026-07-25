@@ -9,6 +9,7 @@ const Projects = () => {
       className="bg-blue-900
                     text-white
                     min-h-screen
+                    w-full
                     font-manrope"
     >
       <h1
