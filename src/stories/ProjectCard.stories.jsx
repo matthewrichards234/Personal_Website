@@ -8,9 +8,9 @@ export default {
 
 const Template = (args) => <ProjectCard {...args} />;
 
-export const ProjectCardWeb = Template.bind({});
+export const ProjectCardSB = Template.bind({});
 
-ProjectCardWeb.args = {
+ProjectCardSB.args = {
   title: "WTWR",
   images: [imgTest, imgTest, imgTest],
   technologies: [
