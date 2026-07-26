@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import imgTest from "../assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg";
 
 export default {
-  title: "ProjectCard",
+  title: "Components/ProjectCard",
   component: ProjectCard,
 };
 
