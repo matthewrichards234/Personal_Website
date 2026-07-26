@@ -16,6 +16,7 @@ const Footer = () => {
               src="src/assets/linkedin-svgrepo-com.svg"
               alt="linkedin-icon"
               className="size-9
+                        md:size-16
                         hover:scale-110 
                         duration-300 
                         ease-in-out
@@ -27,6 +28,7 @@ const Footer = () => {
               src="src/assets/github-svgrepo-com.svg"
               alt="github icon"
               className="size-9 
+                        md:size-16
                         hover:scale-110 
                         duration-300 
                         ease-in-out

@@ -4,7 +4,7 @@ const Landing = () => {
     <div
       className="bg-blue-900
                     text-white
-                    w-screen 
+                    w-full 
                     h-screen 
                     animate-colorAnimate"
     >
