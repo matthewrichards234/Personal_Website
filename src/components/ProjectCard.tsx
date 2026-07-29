@@ -13,18 +13,9 @@ const ProjectCard = ({
   projectCardClassName,
   titleClassName,
   imageClassName,
-  cardSize,
 }: ProjectCardI) => {
-  const cardSizes = {
-    small: "size-20",
-    medium: "size-40",
-    large: "size-60",
-  };
-
   return (
-    <div
-      className={`${cardSizes[cardSize]} border bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl`}
-    >
+    <div className={projectCardClassName}>
       <p className={titleClassName}>{title}</p>
       <img
         src={coverImage}
