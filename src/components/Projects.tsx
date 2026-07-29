@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <div className="bg-blue-900 text-white min-h-screen w-full font-manrope">
@@ -7,12 +8,14 @@ const Projects = () => {
         A brief tour of some of my favorite projects
       </h2>
       <div>
-        <nav>
-          <Link to="WTWR">WTWR</Link>
-          <Link to="Spots">Spots</Link>
-          <Link to="Mortgage-Amortization">Mortgage Amortization Table</Link>
-          <Link to="Powerball-Generator">Powerball-Generator</Link>
-          <Link to="Library-Landing">Library Landing Page</Link>
+        <nav className="flex flex-col gap-5 p-3">
+          <Link to="/projects/WTWR">WTWR</Link>
+          <Link to="/projects/Spots">Spots</Link>
+          <Link to="/projects/Mortgage-Amortization">
+            Mortgage Amortization Table
+          </Link>
+          <Link to="/projects/Powerball-Generator">Powerball-Generator</Link>
+          <Link to="/projects/Library-Landing">Library Landing Page</Link>
         </nav>
       </div>
     </div>

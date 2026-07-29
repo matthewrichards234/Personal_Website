@@ -28,6 +28,8 @@ const Landing = () => {
         >
           MR
         </h1>
+        {/* To - Do: Add styling so full name is on landing page of website */}
+        <h2 className="text-white">A Website by Matthew Richards</h2>
       </div>
       {pulses.map((i) => (
         <span
