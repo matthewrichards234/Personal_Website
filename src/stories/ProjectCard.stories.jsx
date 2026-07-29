@@ -12,5 +12,5 @@ Primary.args = {
   title: "WTWR",
   coverImage: imgTest,
   titleClassName: "text-2xl font-bold",
-  imageClassName: "size-50",
+  imageClassName: "size-50 rounded-2xl shadow-2xl",
 };

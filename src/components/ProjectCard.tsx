@@ -12,7 +12,7 @@ const ProjectCard = ({
   imageClassName,
 }: ProjectCardI) => {
   return (
-    <div>
+    <div className="border bg-white rounded-2xl size-70 flex flex-col justify-center items-center shadow-2xl">
       <p className={titleClassName}>{title}</p>
       <img
         src={coverImage}
