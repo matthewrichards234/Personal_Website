@@ -4,7 +4,6 @@ interface ProjectCardI {
   projectCardClassName: string;
   titleClassName: string;
   imageClassName: string;
-  cardSize: string;
 }
 
 const ProjectCard = ({

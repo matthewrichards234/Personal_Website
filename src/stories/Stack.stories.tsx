@@ -9,7 +9,7 @@ export default {
 const commonProps = {
   projectCardClassName:
     "border bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl p-2 size-50",
-  titleClassName: "text-2xl font-bold",
+  titleClassName: "text-2xl font-bold text-center text-black",
   imageClassName: "size-50 rounded-2xl shadow-2xl",
   coverImage: imgTest,
 };
