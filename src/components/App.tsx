@@ -6,6 +6,11 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Resume from "./Resume";
 import Navbar from "./Navbar";
+import WTWR from "./WTWR";
+import Spots from "./Spots";
+import PowerballGenerator from "./PowerballGenerator";
+import MortgageAmortization from "./MortgageAmortization";
+import LibraryLanding from "./LibraryLanding";
 const App = () => {
   return (
     <div>
@@ -13,7 +18,19 @@ const App = () => {
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/" element={<Landing />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/projects" element={<Projects />}>
+          <Route path="WTWR" element={<WTWR />}></Route>
+          <Route path="Spots" element={<Spots />}></Route>
+          <Route
+            path="Mortgage-Amortization"
+            element={<MortgageAmortization />}
+          ></Route>
+          <Route
+            path="Powerball-Generator"
+            element={<PowerballGenerator />}
+          ></Route>
+          <Route path="Library-Landing" element={<LibraryLanding />}></Route>
+        </Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
       </Routes>
