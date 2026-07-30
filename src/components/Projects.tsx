@@ -19,7 +19,7 @@ const Projects = () => {
         <nav className="flex flex-col gap-5 p-3 items-center">
           {projectList.map((project) => {
             return (
-              <Link to={`projects/${project}`}>
+              <Link to={`${project}`}>
                 <ProjectCard
                   title={project}
                   projectCardClassName="border bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl p-2 size-67"

@@ -1,5 +1,9 @@
 const ProjectTemplate = () => {
-  return <div>ProjectTemplate</div>;
+  return (
+    <div>
+      <p>Test</p>
+    </div>
+  );
 };
 
 export default ProjectTemplate;
