@@ -11,6 +11,7 @@ import Spots from "./Spots";
 import PowerballGenerator from "./PowerballGenerator";
 import MortgageAmortization from "./MortgageAmortization";
 import LibraryLanding from "./LibraryLanding";
+import PersonalWebsite from "./PersonalWebsite";
 const App = () => {
   return (
     <div>
@@ -32,6 +33,10 @@ const App = () => {
         <Route
           path="/projects/Library-Landing"
           element={<LibraryLanding />}
+        ></Route>
+        <Route
+          path="/projects/Personal-Website"
+          element={<PersonalWebsite />}
         ></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
