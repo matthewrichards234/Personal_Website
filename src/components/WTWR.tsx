@@ -4,6 +4,7 @@ const WTWR = () => {
     <div className="bg-blue-900 text-white min-h-screen w-full">
       <ProjectTemplate
         projectTitle="WTWR"
+        projectDescription="WTWR is..."
         technologiesUsedList={[
           "React",
           "JavaScript",
