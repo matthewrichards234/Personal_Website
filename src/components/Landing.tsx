@@ -7,7 +7,7 @@ const Landing = () => {
           MR
         </h1> */}
         {/* To - Do: Add styling so full name is on landing page of website */}
-        <h2 className="text-black text-sm text-center font-bold sm:text-md md:text-xl lg:text-4xl">
+        <h2 className="text-black text-sm text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl">
           A Website by <br></br> Matthew Richards
         </h2>
       </div>
