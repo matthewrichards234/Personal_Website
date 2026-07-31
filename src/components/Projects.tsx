@@ -16,7 +16,7 @@ const Projects = () => {
       <h2 className="text-3xl sm:text-5xl/16 text-center text-gray-300 p-3">
         A brief tour of some of my favorite projects
       </h2>
-      <h3 className="text-2xl sm:text-3xl text-center text-gray-400">
+      <h3 className="text-2xl sm:text-3xl text-center text-gray-400 pb-1">
         Pick a project to open up more information on how I built it
       </h3>
       <div>

@@ -1,8 +1,10 @@
 const Footer = () => {
   return (
-    <div className="h-20 font-manrope font-normal">
+    <div className="h-12 md:h-20 font-manrope font-normal">
       <div className="flex flex-row mt-1.5">
-        <p className="mt-auto mb-auto ml-3.5">&copy; Matthew Richards 2026</p>
+        <p className="mt-auto mb-auto ml-3.5 text-md md:text-xl">
+          &copy; Matthew Richards 2026
+        </p>
         <div className="flex flex-row gap-2 ml-auto mr-3">
           <a
             href="https://www.linkedin.com/in/matthew-richards234/"
@@ -11,24 +13,14 @@ const Footer = () => {
             <img
               src="src/assets/linkedin-svgrepo-com.svg"
               alt="linkedin-icon"
-              className="size-9
-                        md:size-16
-                        hover:scale-110 
-                        duration-300 
-                        ease-in-out
-              "
+              className="size-9 md:size-16 hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <a href="https://github.com/matthewrichards234" target="_blank">
             <img
               src="src/assets/github-svgrepo-com.svg"
               alt="github icon"
-              className="size-9 
-                        md:size-16
-                        hover:scale-110 
-                        duration-300 
-                        ease-in-out
-                        "
+              className="size-9 md:size-16 hover:scale-110 duration-300 ease-in-out"
             />
           </a>
         </div>
