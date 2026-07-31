@@ -11,11 +11,14 @@ const Projects = () => {
     "Personal Website",
   ];
   return (
-    <div className="bg-blue-900 text-white min-h-screen w-full font-manrope">
+    <div className="bg-blue-900 text-white min-h-screen w-full font-manrope pb-2 lg:pb-4">
       <h1 className="text-5xl sm:text-7xl text-center pt-6">Projects</h1>
       <h2 className="text-3xl sm:text-5xl/16 text-center text-gray-300 p-3">
         A brief tour of some of my favorite projects
       </h2>
+      <h3 className="text-2xl sm:text-3xl text-center text-gray-400">
+        Pick a project to open up more information on how I built it
+      </h3>
       <div>
         <nav className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-7 gap-5 p-3 items-center justify-center">
           {projectList.map((project) => {
