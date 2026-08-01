@@ -1,5 +1,6 @@
 import resumePDF from "../assets/resume_for_website.pdf";
 import downloadIcon from "../assets/download-minimalistic-svgrepo-com.svg";
+import resumeScreenshot from "../assets/resume_screenshot.png";
 
 const Resume = () => {
   function handleDownloadClickEvent(fileUrl: string, fileName: string): void {
@@ -30,10 +31,10 @@ const Resume = () => {
         </button>
       </div>
       <div className="flex justify-center">
-        <iframe
-          src={`${resumePDF}#toolbar=0`}
-          title="Matthew's Resume"
-          className="w-212.5 h-266 border-0"
+        <img
+          src={resumeScreenshot}
+          alt="Matthew Richards Resume"
+          className="max-h-[80vh] w-auto"
         />
       </div>
     </div>
