@@ -30,11 +30,11 @@ const Resume = () => {
           />
         </button>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-10 md:pt-3 lg:pt-1">
         <img
           src={resumeScreenshot}
           alt="Matthew Richards Resume"
-          className="max-h-[80vh] w-auto"
+          className="max-h-[80vh] w-auto shadow-2xl"
         />
       </div>
     </div>
