@@ -11,14 +11,16 @@ const ProjectTemplate = ({
 }: ProjectTemplateI) => {
   return (
     <div className="font-manrope">
-      <button
-        onClick={() => {
-          history.back();
-        }}
-        className="px-4 py-2 rounded-full bg-white text-black"
-      >
-        &#8592; back
-      </button>
+      <div className="sticky top-16 flex justify-center">
+        <button
+          onClick={() => {
+            history.back();
+          }}
+          className="px-4 py-2 rounded-full bg-white text-black cursor-pointer"
+        >
+          &#8592; back
+        </button>
+      </div>
       <p className="text-3xl text-center p-3">{projectTitle}</p>
       <p className="px-7 text-base pb-1.5">{projectDescription}</p>
       <p className="text-3xl text-center pb-3">Technologies Used</p>
