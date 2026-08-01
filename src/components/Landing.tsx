@@ -8,7 +8,7 @@ const Landing = () => {
         </h1> */}
         {/* To - Do: Add styling so full name is on landing page of website */}
         <h2 className="text-black text-sm text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-          A Website by <br></br> Matthew Richards
+          <i>Matthew Richards</i> <br></br> <i>Portfolio Website</i>
         </h2>
       </div>
       {pulses.map((i) => (
@@ -22,10 +22,9 @@ const Landing = () => {
                     -translate-x-1/2
                     -translate-y-1/2
                     size-55
-                    sm:size-80
-                    md:size-90
-                    lg:size-110
-                    xl:size-160
+                    sm:size-60
+                    md:size-65
+                    lg:size-100
                     rounded-full
                     bg-white
                     opacity-70

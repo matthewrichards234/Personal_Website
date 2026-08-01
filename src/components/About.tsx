@@ -41,28 +41,11 @@ const About = () => {
   }
 
   return (
-    <div
-      className="bg-blue-900
-                    text-white
-                    min-h-screen
-                    font-manrope
-                    "
-    >
+    <div className="bg-blue-900 text-white min-h-screen font-manrope">
       <div className="pt-3">
         {/* About Me */}
         <div className="flex flex-col items-center">
-          <div
-            className="size-34
-                      sm:size-36 
-                      md:size-38
-                      lg:size-40
-                      rounded-full 
-                      bg-white 
-                      flex 
-                      items-center 
-                      justify-center 
-                      shadow-xl"
-          >
+          <div className="size-34 sm:size-36 md:size-38 lg:size-40 rounded-full bg-white flex items-center justify-center shadow-xl">
             <img
               src="src/assets/linkedinpfp.jpeg"
               alt="headshot"
@@ -102,14 +85,7 @@ const About = () => {
             Proficient Technolgies
           </p>
           <button
-            className="cursor-pointer 
-                        text-center 
-                        text-2xl 
-                        flex
-                        mx-auto
-                        text-gray-300
-                        hover:text-black
-                        mt-2"
+            className="cursor-pointer text-center text-2xl flex mx-auto text-gray-300 hover:text-black mt-2"
             onClick={toggleProficientTechnologies}
           >
             click me to stop the animation
@@ -126,13 +102,7 @@ const About = () => {
                        pb-5"
                 >
                   {/* Group */}
-                  <div
-                    className="flex
-                    w-max
-                    whitespace-nowrap
-                    will-change-transform
-                    animate-horizontalInfiniteScroll"
-                  >
+                  <div className="flex w-max whitespace-nowrap will-change-transform animate-horizontalInfiniteScroll">
                     {technologies.map((technology) => {
                       return (
                         <LanguageCard name={technology} key={technology} />
@@ -152,29 +122,11 @@ const About = () => {
             </>
           ) : (
             <>
-              <div className="w-1/2 flex mx-auto justify-center flex-wrap">
-                <ul
-                  className="flex 
-                            flex-row 
-                            flex-wrap 
-                            gap-8
-                            justify-center
-                            mb-6
-                            mt-3
-                            "
-                >
+              <div className="w-[80%] lg:w-1/2 flex mx-auto justify-center flex-wrap pt-2">
+                <ul className="flex flex-row flex-wrap gap-4 lg:gap-8 justify-center mb-6 mt-3">
                   {technologies.map((technology) => {
                     return (
-                      <li
-                        className="hover:scale-120
-                                    ease-in-out
-                                    duration-350
-                                    cursor-default
-                                    text-xl
-                                    sm:text-2xl
-                                    lg:text-3xl
-                                    "
-                      >
+                      <li className="hover:scale-120 ease-in-out duration-350 cursor-default text-xl sm:text-2xl lg:text-3xl">
                         {technology}
                       </li>
                     );

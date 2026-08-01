@@ -45,34 +45,12 @@ const AboutCard = ({ title, position, dates, icon }: AboutCardInterface) => {
       >
         {title}
       </p>
-      <div
-        className="flex 
-                      flex-row 
-                      items-center 
-                      gap-1"
-      >
+      <div className="flex flex-row items-center gap-1">
         <img src={icon} alt="about card icon" className="w-4 h-4" />
-        <p
-          className="text-sm 
-                      sm:text-sm 
-                      md:text-base 
-                      text-center 
-                      p-0"
-        >
-          {position}
-        </p>
+        <p className="text-sm md:text-base text-center p-0">{position}</p>
       </div>
-      <div
-        className="flex 
-                      flex-row 
-                      text-center 
-                      text-[8px] 
-                      sm:text-sm 
-                      md:text-base 
-                      lg:text-lg 
-                      opacity-87"
-      >
-        <p>{dates}</p>
+      <div className="flex flex-row text-center text-[8px] sm:text-sm md:text-base lg:text-lg opacity-87">
+        <p className="text-xs md:text-sm">{dates}</p>
       </div>
     </div>
   );
