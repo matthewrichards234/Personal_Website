@@ -1,6 +1,10 @@
 import ProjectTemplate from "./ProjectTemplate";
 const Spots = () => {
-  return <div>Spots</div>;
+  return (
+    <div>
+      <ProjectTemplate />
+    </div>
+  );
 };
 
 export default Spots;
