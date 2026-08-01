@@ -1,5 +1,5 @@
 import resumePDF from "../assets/resume_for_website.pdf";
-import downloadIcon from "../assets/download.png";
+import downloadIcon from "../assets/download-minimalistic-svgrepo-com.svg";
 
 const Resume = () => {
   function handleDownloadClickEvent(fileUrl: string, fileName: string): void {
@@ -13,11 +13,11 @@ const Resume = () => {
     document.body.removeChild(link);
   }
   return (
-    <div className="bg-blue-900 w-screen h-screen text-white">
-      <div className="flex flex-row justify-center items-center gap-1.5">
-        <h1 className="text-8xl p-4.5">My Resume</h1>
+    <div className="bg-blue-900 w-screen h-screen text-white font-manrope">
+      <div className="flex flex-row justify-center items-center lg:gap-1.5">
+        <h1 className="text-4xl lg:text-8xl p-3 lg:p-4.5">My Resume</h1>
         <button
-          className="cursor-pointer w-18 h-18"
+          className="cursor-pointer"
           onClick={() => {
             handleDownloadClickEvent(resumePDF, "Matthew_Richards_Resume");
           }}
@@ -25,7 +25,7 @@ const Resume = () => {
           <img
             src={downloadIcon}
             alt="download resume button"
-            className="w-18 h-18"
+            className="size-12 lg:size-18"
           />
         </button>
       </div>
