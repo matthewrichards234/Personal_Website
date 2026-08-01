@@ -2,12 +2,14 @@ interface ProjectTemplateI {
   projectTitle: string;
   projectDescription: string;
   technologiesUsedList: string[];
+  projectImages: string[];
 }
 
 const ProjectTemplate = ({
   projectTitle,
   projectDescription,
   technologiesUsedList,
+  projectImages,
 }: ProjectTemplateI) => {
   return (
     <div className="font-manrope">
@@ -29,6 +31,15 @@ const ProjectTemplate = ({
           return (
             <li className="text-blue-900 px-4 py-2 rounded-full bg-blue-100 text-lg hover:scale-110 ease-in-out duration-300">
               {technology}
+            </li>
+          );
+        })}
+      </ul>
+      <ul>
+        {projectImages.map((projectImage) => {
+          return (
+            <li>
+              <img src={projectImage} alt="Project Image" />
             </li>
           );
         })}

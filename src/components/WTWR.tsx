@@ -14,6 +14,7 @@ const WTWR = () => {
           "Joi",
           "Google VM",
         ]}
+        projectImages={[]}
       ></ProjectTemplate>
     </div>
   );
