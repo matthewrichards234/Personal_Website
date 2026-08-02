@@ -61,7 +61,7 @@ const About = () => {
             />
           </div>
           <p className="text-5xl py-1">About Me</p>
-          <p className="w-5/6 text-lg md:text-2xl py-2">
+          <p className="w-5/6 text-lg/9 md:text-2xl/9 py-2">
             I'm a Full Stack Engineer with a strong academic foundation in
             Computer Information Systems, concentrating in Data Analytics, along
             with a minor in Computer Science. I enjoy building scalable,
@@ -88,7 +88,8 @@ const About = () => {
             className="cursor-pointer text-center text-2xl flex mx-auto text-gray-300 hover:text-black mt-2"
             onClick={toggleProficientTechnologies}
           >
-            click me to stop the animation
+            click me to {activeProficientTechnologies ? <>stop</> : <>start</>}{" "}
+            the animation
           </button>
 
           {activeProficientTechnologies ? (

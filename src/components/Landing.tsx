@@ -7,7 +7,7 @@ const Landing = () => {
           MR
         </h1> */}
         {/* To - Do: Add styling so full name is on landing page of website */}
-        <h2 className="text-black text-sm text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+        <h2 className="text-black text-[17px]/8 text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl">
           <i>Matthew Richards</i> <br></br> <i>Portfolio Website</i>
         </h2>
       </div>
@@ -21,9 +21,9 @@ const Landing = () => {
                     left-1/2
                     -translate-x-1/2
                     -translate-y-1/2
-                    size-55
+                    size-46
                     sm:size-60
-                    md:size-65
+                    md:size-80
                     lg:size-100
                     rounded-full
                     bg-white
