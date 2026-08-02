@@ -13,7 +13,7 @@ const ProjectTemplate = ({
 }: ProjectTemplateI) => {
   return (
     <div className="font-manrope">
-      <div className="sticky top-16 flex justify-center">
+      <div className="visible md:hidden sticky top-16 flex justify-center">
         <button
           onClick={() => {
             history.back();
@@ -35,11 +35,15 @@ const ProjectTemplate = ({
           );
         })}
       </ul>
-      <ul>
+      <ul className="flex flex-col justify-center items-center gap-5 mt-5 pb-5">
         {projectImages.map((projectImage) => {
           return (
-            <li>
-              <img src={projectImage} alt="Project Image" />
+            <li className="border rounded-2xl bg-white padding-2 size-80 flex justify-center items-center shadow-2xl">
+              <img
+                src={projectImage}
+                alt="Project Image"
+                className="size-70 rounded-2xl shadow-2xl"
+              />
             </li>
           );
         })}
