@@ -13,7 +13,7 @@
   --animate-wave3: wave-spin 32s linear infinite;
   --animate-pulseAnimate: pulseAnimate 6s ease-in-out infinite;
   --animate-colorAnimate: colorAnimate 8s linear infinite;
-  --animate-hamburgerBarFadeIn: hamburgerBarFadeIn 1s linear;
+  --animate-backButtonFadeIn: backButtonFadeIn 1s ease-in;
 }
 
 @keyframes gradientText {
@@ -75,13 +75,5 @@
 @keyframes colorAnimate {
   100% {
     filter: hue-rotate(360deg);
-  }
-}
-@keyframes hamburgerBarFadeIn {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }

@@ -24,7 +24,7 @@ const ProjectTemplate = ({
         </button>
       </div>
       <p className="text-3xl text-center p-3">{projectTitle}</p>
-      <p className="px-7 text-base pb-1.5">{projectDescription}</p>
+      <p className="px-7 text-base/8 pb-1.5">{projectDescription}</p>
       <p className="text-3xl text-center pb-3">Technologies Used</p>
       <ul className="flex justify-center w-full gap-4 flex-wrap">
         {technologiesUsedList.map((technology) => {
