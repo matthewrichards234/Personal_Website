@@ -7,7 +7,7 @@ import graphicResumeScreenshot1 from "../assets/graphic-resume-1.png";
 import graphicResumeScreenshot2 from "../assets/graphic-resume-2.png";
 
 const Resume = () => {
-  const [activeResume, setActiveResume] = useState("graphic");
+  const [activeResume, setActiveResume] = useState("default");
 
   function handleDownloadClickEvent(fileUrl: string, fileName: string): void {
     const link = document.createElement("a");

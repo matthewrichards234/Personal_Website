@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Landing from "./Landing";
 import About from "./About";
 import Projects from "./Projects";
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <ScrollToTop />
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/" element={<Landing />}></Route>
