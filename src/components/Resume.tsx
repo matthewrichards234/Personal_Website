@@ -43,20 +43,27 @@ const Resume = () => {
           />
         </button>
       </div>
-      <div className="flex flex-row justify-evenly bg-white text-black w-[80%] rounded-2xl mx-auto mt-2">
+      <div className="flex w-[80%] mx-auto mt-6 rounded-xl bg-white p-1 shadow-md">
         <button
-          onClick={() => {
-            setDefaultResume();
-          }}
+          onClick={setDefaultResume}
+          className={`flex-1 rounded-lg py-3 text-sm font-medium transition-all duration-200 ${
+            activeResume === "default"
+              ? "bg-blue-600 text-white shadow"
+              : "text-gray-700 hover:bg-gray-100"
+          }`}
         >
-          standard resume
+          Standard Resume
         </button>
+
         <button
-          onClick={() => {
-            setGraphicResume();
-          }}
+          onClick={setGraphicResume}
+          className={`flex-1 rounded-lg py-3 text-sm font-medium transition-all duration-200 ${
+            activeResume === "graphic"
+              ? "bg-blue-600 text-white shadow"
+              : "text-gray-700 hover:bg-gray-100"
+          }`}
         >
-          graphic resume
+          Graphic Resume
         </button>
       </div>
       <div className="flex justify-center pt-5 md:pt-3 lg:pt-1">
