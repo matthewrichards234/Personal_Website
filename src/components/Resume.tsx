@@ -7,7 +7,7 @@ import graphicResumeScreenshot1 from "../assets/graphic-resume-1.png";
 import graphicResumeScreenshot2 from "../assets/graphic-resume-2.png";
 
 const Resume = () => {
-  const [activeResume, setActiveResume] = useState("default");
+  const [activeResume, setActiveResume] = useState("graphic");
 
   function handleDownloadClickEvent(fileUrl: string, fileName: string): void {
     const link = document.createElement("a");
@@ -68,21 +68,27 @@ const Resume = () => {
       </div>
       <div className="flex justify-center pt-5 md:pt-3 lg:pt-1">
         {activeResume == "default" ? (
-          <>
+          <div>
             <img
               src={resumeScreenshot}
               alt="Matthew Richards Resume"
               className="max-h-[80vh] w-auto shadow-2xl p-1.5"
             />
-          </>
+          </div>
         ) : (
-          <>
+          <div className="h-[80vh] overflow-y-auto snap-y snap-mandatory scroll-smooth scrollbar-none">
             <img
               src={graphicResumeScreenshot1}
-              alt="Matthew Richards Graphic Resume"
-              className="max-h-[80vh] w-auto shadow-2xl p-1.5"
+              alt="Resume Page 1"
+              className="w-full h-[80vh] object-contain snap-start"
             />
-          </>
+
+            <img
+              src={graphicResumeScreenshot2}
+              alt="Resume Page 2"
+              className="w-full h-[80vh] object-contain snap-start"
+            />
+          </div>
         )}
       </div>
     </div>

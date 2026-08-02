@@ -87,3 +87,17 @@
     opacity: 1;
   }
 }
+@utility scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 9999px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e5e7eb;
+  }
+}
