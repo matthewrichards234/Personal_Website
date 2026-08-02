@@ -27,7 +27,7 @@ const Resume = () => {
   }
 
   return (
-    <div className="bg-blue-900 w-screen h-screen text-white font-manrope">
+    <div className="bg-blue-900 w-screen h-full text-white font-manrope pb-3">
       <div className="flex flex-row justify-center items-center lg:gap-1.5">
         <h1 className="text-4xl lg:text-8xl p-3 mt-1 lg:p-4.5">My Resume</h1>
         <button
