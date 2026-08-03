@@ -15,6 +15,7 @@ const WTWR = () => {
           "Google VM",
         ]}
         projectImages={[]}
+        githubLink="https://github.com/matthewrichards234/se_project_react"
       ></ProjectTemplate>
     </div>
   );

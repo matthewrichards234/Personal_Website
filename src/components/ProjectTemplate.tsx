@@ -5,6 +5,7 @@ interface ProjectTemplateI {
   projectDescription: string;
   technologiesUsedList: string[];
   projectImages: string[];
+  githubLink: string;
 }
 
 const ProjectTemplate = ({
@@ -12,6 +13,7 @@ const ProjectTemplate = ({
   projectDescription,
   technologiesUsedList,
   projectImages,
+  githubLink,
 }: ProjectTemplateI) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -62,6 +64,16 @@ const ProjectTemplate = ({
           </li>
         ))}
       </ul>
+      <div className="flex justify-center mt-2">
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full bg-blue-600 px-8 py-3 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl active:translate-y-0"
+        >
+          View on GitHub →
+        </a>
+      </div>
       <ul className="flex flex-col justify-center items-center gap-5 mt-5 pb-5">
         {projectImages.map((projectImage, index) => (
           <li
