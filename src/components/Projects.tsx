@@ -20,7 +20,7 @@ const Projects = () => {
         Pick a project to open up more information on how I built it
       </h3>
       <div>
-        <nav className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-7 gap-5 p-3 items-center justify-center">
+        <nav className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-7 gap-5 p-3 items-center justify-center lg:pt-15">
           {projectList.map((project) => {
             return (
               <Link to={`${project.replaceAll(" ", "-")}`}>

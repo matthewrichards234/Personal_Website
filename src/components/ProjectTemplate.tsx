@@ -51,14 +51,16 @@ const ProjectTemplate = ({
         </button>
       </div>
 
-      <p className="text-3xl text-center p-3">{projectTitle}</p>
-      <p className="px-7 text-base/8 pb-1.5">{projectDescription}</p>
+      <p className="text-3xl lg:text-6xl text-center p-3">{projectTitle}</p>
+      <p className="px-7 text-base/8 pb-1.5 text-center lg:text-xl">
+        {projectDescription}
+      </p>
       <p className="text-3xl text-center pb-3">Technologies Used</p>
       <ul className="flex justify-center w-full gap-4 flex-wrap">
         {technologiesUsedList.map((technology, index) => (
           <li
             key={index}
-            className="text-blue-900 px-4 py-2 rounded-full bg-blue-100 text-lg hover:scale-110 ease-in-out duration-300"
+            className="text-blue-900 px-4 py-2 lg:px-8 lg:py-4 rounded-full bg-blue-100 text-lg lg:text-xl lg:my-3 hover:scale-110 ease-in-out duration-300"
           >
             {technology}
           </li>
@@ -78,12 +80,12 @@ const ProjectTemplate = ({
         {projectImages.map((projectImage, index) => (
           <li
             key={index}
-            className="border rounded-2xl bg-white p-2 h-60 w-80 flex justify-center items-center shadow-2xl"
+            className="border rounded-2xl bg-white p-2 h-60 w-80 flex justify-center items-center shadow-2xl lg:h-150 lg:w-210 lg:hover:scale-105 lg:ease-in-out lg:duration-300"
           >
             <img
               src={projectImage}
               alt="Project Image"
-              className="h-50 w-70 rounded-2xl shadow-2xl"
+              className="h-50 w-70 lg:h-130 lg:w-190 rounded-2xl shadow-2xl"
             />
           </li>
         ))}
