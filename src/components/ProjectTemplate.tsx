@@ -32,7 +32,7 @@ const ProjectTemplate = ({
   }, []);
 
   return (
-    <div className="font-manrope">
+    <div className="font-manrope bg-blue-900 text-white min-h-screen w-full">
       {/* Container stays mounted; visibility toggled via opacity and pointer-events */}
       <div
         className={`sticky top-16 z-50 flex justify-center transition-all duration-300 md:hidden ${
@@ -78,12 +78,12 @@ const ProjectTemplate = ({
         {projectImages.map((projectImage, index) => (
           <li
             key={index}
-            className="border rounded-2xl bg-white p-2 size-80 flex justify-center items-center shadow-2xl"
+            className="border rounded-2xl bg-white p-2 h-60 w-80 flex justify-center items-center shadow-2xl"
           >
             <img
               src={projectImage}
               alt="Project Image"
-              className="size-70 rounded-2xl shadow-2xl"
+              className="h-50 w-70 rounded-2xl shadow-2xl"
             />
           </li>
         ))}

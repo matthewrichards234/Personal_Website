@@ -33,7 +33,7 @@ const App = () => {
           element={<PowerballGenerator />}
         ></Route>
         <Route
-          path="/projects/Library-Landing"
+          path="/projects/Library-Landing-Page"
           element={<LibraryLanding />}
         ></Route>
         <Route
