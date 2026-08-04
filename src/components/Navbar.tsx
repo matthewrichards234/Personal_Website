@@ -9,7 +9,7 @@ const Navbar = () => {
     setSideNavbar(!sideNavbar);
   }
 
-  function handleNavigationClick(e: Event): void {
+  function handleNavigationClick(): void {
     if (sideNavbar == true) {
       setSideNavbar(false);
     }

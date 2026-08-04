@@ -3,7 +3,7 @@ import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 import AboutModal from "./AboutModal";
 const About = () => {
-  const [activateModal, setActivateModal] = useState(null);
+  const [activateModal, setActivateModal] = useState("");
 
   const [activeProficientTechnologies, setActiveProficientTechnologies] =
     useState(true);
@@ -37,7 +37,7 @@ const About = () => {
   }
 
   function handleCloseModal(): void {
-    setActivateModal(null);
+    setActivateModal("");
   }
 
   return (
