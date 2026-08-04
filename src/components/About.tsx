@@ -2,6 +2,15 @@ import { useState } from "react";
 import LanguageCard from "./LanguageCard";
 import AboutCard from "./AboutCard";
 import AboutModal from "./AboutModal";
+import pfp from "../assets/linkedinpfp.jpeg";
+import engineerWorker from "../assets/engineer-worker-svgrepo-com.svg";
+import studentCap from "../assets/student-cap-svgrepo-com.svg";
+import dumbbellIcon from "../assets/dumbell-svgrepo-com.svg";
+import booksIcon from "../assets/books-svgrepo-com.svg";
+import movieIcon from "../assets/movies-svgrepo-com.svg";
+import fitnessImage from "../assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg";
+import readingImage from "../assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg";
+import moviesImage from "../assets/krists-luhaers-AtPWnYNDJnM-unsplash.jpg";
 const About = () => {
   const [activateModal, setActivateModal] = useState("");
 
@@ -47,17 +56,9 @@ const About = () => {
         <div className="flex flex-col items-center">
           <div className="size-34 sm:size-36 md:size-38 lg:size-40 rounded-full bg-white flex items-center justify-center shadow-xl">
             <img
-              src="src/assets/linkedinpfp.jpeg"
+              src={pfp}
               alt="headshot"
-              className="
-              size-28
-              sm:size-30 
-              md:size-32
-              lg:size-34
-              rounded-full 
-              shadow-[0_10px_30px_rgba(0,0,0,0.35)] 
-              z-2
-              "
+              className="size-28 sm:size-30 md:size-32 lg:size-34 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)] z-2"
             />
           </div>
           <p className="text-5xl py-1">About Me</p>
@@ -77,11 +78,7 @@ const About = () => {
 
         {/* Proficient Technologies */}
         <div className="mt-4">
-          <p
-            className="text-center 
-                        md:text-5xl
-                        text-3xl "
-          >
+          <p className="text-center md:text-5xl text-3xl ">
             Proficient Technologies
           </p>
           <button
@@ -140,31 +137,24 @@ const About = () => {
         {/* Experience */}
         <div className="mt-3 mb-5">
           <p className="text-5xl text-center mb-4">Experience & Education</p>
-          <div
-            className="flex 
-                      flex-col 
-                      justify-evenly 
-                      items-center
-                      gap-2 
-                      md:flex-row"
-          >
+          <div className="flex flex-col justify-evenly items-center gap-2 md:flex-row">
             <AboutCard
               title={"SySoft"}
               position={"Software Engineer"}
               dates={"May 2024 - May 2025"}
-              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+              icon={engineerWorker}
             />
             <AboutCard
               title={"Synth-Tree"}
               position={"Software Engineer"}
               dates={"October 2025 - December 2025"}
-              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+              icon={engineerWorker}
             />
             <AboutCard
               title={"Jewish Communal Fund"}
               position={"Technology Intern"}
               dates={"May 2023 - September 2023"}
-              icon={"src/assets/engineer-worker-svgrepo-com.svg"}
+              icon={engineerWorker}
             />
           </div>
           <div className="mt-2 flex flex-col justify-evenly items-center gap-2 md:flex-row">
@@ -172,13 +162,13 @@ const About = () => {
               title={"Baruch College"}
               position="BBA Data Analysis Major, Computer Science minor"
               dates={"August 2022 - December 2025"}
-              icon={"src/assets/student-cap-svgrepo-com.svg"}
+              icon={studentCap}
             />
             <AboutCard
               title={"TripleTen"}
               position="Software Engineer Student"
               dates={"June 2025 - December 2025"}
-              icon={"src/assets/student-cap-svgrepo-com.svg"}
+              icon={studentCap}
             />
           </div>
         </div>
@@ -189,32 +179,24 @@ const About = () => {
           <p className="text-lg text-center mb-3 text-gray-300">
             Click a fun fact to open more info
           </p>
-          <div
-            className="flex 
-                          flex-col 
-                          justify-center 
-                          items-center 
-                          gap-2 
-                          md:flex-row
-                          flex-wrap"
-          >
+          <div className="flex flex-col justify-center items-center gap-2 md:flex-row flex-wrap">
             <AboutModal
               title="Fitness"
-              image="src/assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg"
+              image={fitnessImage}
               description="I love fitness! I have been working out for 4.5+ years: Lifting, Boxing, Muay Thai, Pilates, Yoga, etc. My max deadlift is 315lbs!"
               isOpen={activateModal === "fitness"}
               handleClose={handleCloseModal}
             />
             <AboutModal
               title="Reading"
-              image="src/assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg"
+              image={readingImage}
               description="I am an avid reader! Some of my favorite authors include Malcolm Gladwell, Robert Greene, and Haruki Marukami. You can also find me reading manga."
               isOpen={activateModal === "reading"}
               handleClose={handleCloseModal}
             />
             <AboutModal
               title="Movies"
-              image="src/assets/krists-luhaers-AtPWnYNDJnM-unsplash.jpg"
+              image={moviesImage}
               description="I've become quite the movie critic lately. As of 2026, my favorite movie has been Obsession. It was very refreshing to see an indie movie have such an effect on me."
               isOpen={activateModal === "movies"}
               handleClose={handleCloseModal}
@@ -225,10 +207,7 @@ const About = () => {
                 handleOpenModal("fitness");
               }}
             >
-              <AboutCard
-                title="Fitness"
-                icon="src/assets/dumbell-svgrepo-com.svg"
-              />
+              <AboutCard title="Fitness" icon={dumbbellIcon} />
             </button>
             <button
               className="cursor-pointer"
@@ -236,10 +215,7 @@ const About = () => {
                 handleOpenModal("reading");
               }}
             >
-              <AboutCard
-                title="Reading"
-                icon="src/assets/books-svgrepo-com.svg"
-              />
+              <AboutCard title="Reading" icon={booksIcon} />
             </button>
             <button
               className="cursor-pointer"
@@ -247,10 +223,7 @@ const About = () => {
                 handleOpenModal("movies");
               }}
             >
-              <AboutCard
-                title="Movies"
-                icon="src/assets/movies-svgrepo-com.svg"
-              />
+              <AboutCard title="Movies" icon={movieIcon} />
             </button>
           </div>
         </div>
