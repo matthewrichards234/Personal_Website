@@ -11,10 +11,10 @@ const Projects = () => {
   const projectList = [
     { name: "WTWR", image: wtwrImage },
     { name: "Spots", image: spotsImage },
-    { name: "Mortgage Amortization Table", image: amortizationTableImage },
-    { name: "Powerball Generator", image: powerballImage },
     { name: "Library Landing Page", image: libraryLandingImage },
     { name: "Personal Website", image: personalWebsiteImage },
+    { name: "Mortgage Amortization Table", image: amortizationTableImage },
+    { name: "Powerball Generator", image: powerballImage },
   ];
   return (
     <div className="bg-blue-900 text-white min-h-screen w-full font-manrope pb-2 lg:pb-4">

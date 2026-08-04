@@ -35,7 +35,7 @@ const ProjectTemplate = ({
     <div className="font-manrope bg-blue-900 text-white min-h-screen w-full">
       {/* Container stays mounted; visibility toggled via opacity and pointer-events */}
       <div
-        className={`sticky top-16 z-50 flex justify-center transition-all duration-300 md:hidden ${
+        className={`sticky top-16 z-50 flex justify-center transition-all duration-300 xl:hidden ${
           isVisible
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -43,7 +43,7 @@ const ProjectTemplate = ({
       >
         <button
           onClick={() => history.back()}
-          className={`px-4 py-2 rounded-full bg-white text-black cursor-pointer shadow-md ${
+          className={`px-4 py-2 rounded-full bg-white text-black cursor-pointer shadow-md lg:px-8 lg:py-4 lg:text-xl ${
             isVisible ? "animate-backButtonFadeIn" : ""
           }`}
         >

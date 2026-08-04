@@ -195,7 +195,8 @@ const About = () => {
                           justify-center 
                           items-center 
                           gap-2 
-                          md:flex-row"
+                          md:flex-row
+                          flex-wrap"
           >
             <AboutModal
               title="Fitness"

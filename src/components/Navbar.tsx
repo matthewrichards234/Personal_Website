@@ -31,7 +31,7 @@ const Navbar = () => {
         handleNavlinkClick={handleNavigationClick}
       />
       {/* Mobile view */}
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <nav
           className="flex 
                     flex-row
@@ -61,7 +61,7 @@ const Navbar = () => {
         </nav>
       </div>
       {/* Desktop view */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <nav
           className="flex 
                   flex-row

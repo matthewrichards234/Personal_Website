@@ -16,7 +16,7 @@ const Contact = () => {
           Let's Connect
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg md:text-2xl text-gray-700 leading-relaxed">
+        <p className="mt-6 max-w-2xl text-lg md:text-2xl lg:text-4xl text-gray-700 leading-relaxed">
           Whether you have an opportunity, an interesting project, or just want
           to chat about software engineering, I'd love to hear from you.
         </p>
