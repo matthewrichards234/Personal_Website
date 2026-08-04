@@ -82,14 +82,13 @@ const About = () => {
                         md:text-5xl
                         text-3xl "
           >
-            Proficient Technolgies
+            Proficient Technologies
           </p>
           <button
             className="cursor-pointer text-center text-2xl flex mx-auto text-gray-300 hover:text-black mt-2"
             onClick={toggleProficientTechnologies}
           >
-            click me to {activeProficientTechnologies ? <>stop</> : <>start</>}{" "}
-            the animation
+            {activeProficientTechnologies ? <>Stop</> : <>Start</>} Animation
           </button>
 
           {activeProficientTechnologies ? (
