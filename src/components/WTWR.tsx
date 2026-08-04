@@ -13,8 +13,11 @@ const WTWR = () => {
     <div>
       <ProjectTemplate
         projectTitle="WTWR"
-        projectDescription="WTWR is a full stack web app that suggest outfits based on real time weather updates in your area. 
-        Clothing items are generated"
+        projectDescription="WTWR (What to Wear?) — This full-stack weather application recommends clothing based
+         on real-time weather data retrieved from an external API. Developing this project gave me hands-on experience 
+         building RESTful APIs, implementing user authentication and authorization, working with databases, and creating 
+         secure back-end services using Node.js and Express. It also strengthened my understanding of client-server architecture, 
+         CRUD operations, and integrating a React front end with a custom back end."
         technologiesUsedList={[
           "React",
           "JavaScript",

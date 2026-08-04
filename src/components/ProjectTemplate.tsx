@@ -52,7 +52,7 @@ const ProjectTemplate = ({
       </div>
 
       <p className="text-3xl lg:text-6xl text-center p-3">{projectTitle}</p>
-      <p className="px-7 text-base/8 pb-1.5 text-center lg:text-xl">
+      <p className="mx-auto max-w-3xl px-7 pb-1.5 text-center text-base/8 lg:max-w-6xl lg:pb-5 lg:text-[22px]">
         {projectDescription}
       </p>
       <p className="text-3xl text-center pb-3">Technologies Used</p>
