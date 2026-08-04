@@ -1,15 +1,20 @@
 import wtwrImage from "../assets/wtwr_screenshot_1.png";
 import spotsImage from "../assets/spots_screenshot_1.png";
+import personalWebsiteImage from "../assets/Screenshot 2026-08-03 at 8.17.23 PM.png";
+import amortizationTableImage from "../assets/f5412dc340319c20ffc8dd9cefa17a62279cd908.jpeg";
+import libraryLandingImage from "../assets/library_screenshot_1.png";
+import powerballImage from "../assets/14340550_2024StockPowerballimg.jpg";
+
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectList = [
     { name: "WTWR", image: wtwrImage },
     { name: "Spots", image: spotsImage },
-    { name: "Amortization Table", image: wtwrImage },
-    { name: "Powerball Generator", image: wtwrImage },
-    { name: "Library Landing Page", image: wtwrImage },
-    { name: "Personal Website", image: wtwrImage },
+    { name: "Mortgage Amortization Table", image: amortizationTableImage },
+    { name: "Powerball Generator", image: powerballImage },
+    { name: "Library Landing Page", image: libraryLandingImage },
+    { name: "Personal Website", image: personalWebsiteImage },
   ];
   return (
     <div className="bg-blue-900 text-white min-h-screen w-full font-manrope pb-2 lg:pb-4">

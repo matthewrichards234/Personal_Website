@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/projects/WTWR" element={<WTWR />}></Route>
         <Route path="/projects/Spots" element={<Spots />}></Route>
         <Route
-          path="/projects/Mortgage-Amortization"
+          path="/projects/Mortgage-Amortization-Table"
           element={<MortgageAmortization />}
         ></Route>
         <Route
