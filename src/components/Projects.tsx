@@ -1,14 +1,15 @@
-import imgTest from "../assets/luisa-brimble-VfHoMBagDPc-unsplash.jpg";
+import wtwrImage from "../assets/wtwr_screenshot_1.png";
+import spotsImage from "../assets/spots_screenshot_1.png";
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectList = [
-    "WTWR",
-    "Spots",
-    "Amortization Table",
-    "Powerball Generator",
-    "Library Landing Page",
-    "Personal Website",
+    { name: "WTWR", image: wtwrImage },
+    { name: "Spots", image: spotsImage },
+    { name: "Amortization Table", image: wtwrImage },
+    { name: "Powerball Generator", image: wtwrImage },
+    { name: "Library Landing Page", image: wtwrImage },
+    { name: "Personal Website", image: wtwrImage },
   ];
   return (
     <div className="bg-blue-900 text-white min-h-screen w-full font-manrope pb-2 lg:pb-4">
@@ -23,13 +24,13 @@ const Projects = () => {
         <nav className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-7 gap-5 p-3 items-center justify-center lg:pt-15">
           {projectList.map((project) => {
             return (
-              <Link to={`${project.replaceAll(" ", "-")}`}>
+              <Link to={`${project["name"].replaceAll(" ", "-")}`}>
                 <ProjectCard
-                  title={project}
-                  projectCardClassName="border hover:scale-105 ease-in-out duration-300 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl p-2 size-67 sm:size-80 md:size-120 lg:w-150 lg:h-90"
+                  title={project["name"]}
+                  projectCardClassName="border hover:scale-105 ease-in-out duration-300 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl p-2 size-67 sm:size-80 md:size-120 lg:w-150 lg:h-110"
                   titleClassName="text-2xl md:text-3xl pb-2 font-bold text-center text-black"
-                  imageClassName="size-55 sm:size-60 md:size-92 lg:size-75 rounded-2xl shadow-2xl"
-                  coverImage={imgTest}
+                  imageClassName="size-55 sm:size-60 md:size-92 lg:h-80 lg:w-110 rounded-2xl shadow-2xl"
+                  coverImage={project["image"]}
                 />
               </Link>
             );
