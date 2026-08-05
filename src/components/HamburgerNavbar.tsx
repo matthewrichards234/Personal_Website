@@ -21,7 +21,9 @@ const HamburgerNavbar = ({
                     gap-8 
                     items-center 
                     justify-center 
-                    fixed
+                    fixed  
+                    inset-0
+                    z-200
                     "
       >
         <NavLink to="/" onClick={handleNavlinkClick}>
