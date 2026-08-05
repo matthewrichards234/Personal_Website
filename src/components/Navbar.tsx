@@ -1,7 +1,7 @@
 import hamburgerMenuIcon from "../assets/hamburger-menu-svgrepo-com.svg";
 import HamburgerNavbar from "./HamburgerNavbar";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [sideNavbar, setSideNavbar] = useState(false);
@@ -14,7 +14,13 @@ const Navbar = () => {
       setSideNavbar(false);
     }
   }
+  useEffect(() => {
+    document.body.style.overflow = sideNavbar ? "hidden" : "auto";
 
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sideNavbar]);
   return (
     <div
       className="font-manrope
