@@ -5,7 +5,7 @@ import AboutModal from "./AboutModal";
 import pfp from "../assets/linkedinpfp.jpeg";
 import engineerWorker from "../assets/engineer-worker-svgrepo-com.svg";
 import studentCap from "../assets/student-cap-svgrepo-com.svg";
-import dumbbellIcon from "../assets/dumbell-svgrepo-com.svg";
+import dumbbellIcon from "../assets/dumbbell-svgrepo-com.svg";
 import booksIcon from "../assets/books-svgrepo-com.svg";
 import movieIcon from "../assets/movies-svgrepo-com.svg";
 import fitnessImage from "../assets/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg";

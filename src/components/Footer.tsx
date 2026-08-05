@@ -1,3 +1,6 @@
+import githubIcon from "../assets/github-svgrepo-com.svg";
+import linkedInIcon from "../assets/linkedin-svgrepo-com.svg";
+
 const Footer = () => {
   return (
     <div className="h-12 md:h-20 font-manrope font-normal">
@@ -11,14 +14,14 @@ const Footer = () => {
             target="_blank"
           >
             <img
-              src="src/assets/linkedin-svgrepo-com.svg"
+              src={linkedInIcon}
               alt="linkedin-icon"
               className="size-9 md:size-16 hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <a href="https://github.com/matthewrichards234" target="_blank">
             <img
-              src="src/assets/github-svgrepo-com.svg"
+              src={githubIcon}
               alt="github icon"
               className="size-9 md:size-16 hover:scale-110 duration-300 ease-in-out"
             />

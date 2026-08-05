@@ -1,3 +1,5 @@
+import emailIcon from "../assets/mail.png";
+
 const Contact = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-white">
@@ -26,7 +28,7 @@ const Contact = () => {
             href="mailto:matthewrichards234@gmail.com"
             className="flex items-center justify-center gap-3 rounded-full bg-white px-4 md:px-8 py-2 md:py-4 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
           >
-            <img src="src/assets/mail.png" alt="Email" className="h-6 w-6" />
+            <img src={emailIcon} alt="Email" className="h-6 w-6" />
             <span className="text-sm md:text-lg font-semibold text-black">
               matthewrichards234@gmail.com
             </span>
