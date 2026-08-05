@@ -61,7 +61,7 @@ const Navbar = () => {
             <img
               src={hamburgerMenuIcon}
               alt="hamburger icon"
-              className="size-14 fixed top-0 right-0"
+              className="size-14 fixed top-0 right-0 z-[300]"
             />
           </button>
         </nav>
