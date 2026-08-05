@@ -30,7 +30,7 @@ const Navbar = () => {
                   sticky
                   top-0
                   bg-white
-                  z-201"
+                  z-[201]"
     >
       <HamburgerNavbar
         isOpen={sideNavbar}

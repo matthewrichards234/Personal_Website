@@ -23,7 +23,7 @@ const HamburgerNavbar = ({
                     justify-center 
                     fixed  
                     inset-0
-                    z-200
+                    z-[200]
                     "
       >
         <NavLink to="/" onClick={handleNavlinkClick}>
